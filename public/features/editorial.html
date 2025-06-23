@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Editorial Excellence | Mountain Fashion Magazine</title>
+
+    <style>
+        :root {
+            --sky-blue: #B8D8EB;
+            --sunlit-gold: #FFD66B;
+            --earthy-green: #7BA67C;
+            --granite-grey: #4D4D4D;
+            --cream-white: #F9F6F1;
+            --deep-navy: #1a1a2e;
+            --accent-coral: #ff6b6b;
+            --platinum: #e5e4e2;
+            --diamond: #b9f2ff;
+            --text-primary: #333;
+            --text-secondary: #555;
+            --bg-primary: #f9f6f1;
+            --bg-secondary: #ffffff;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--sunlit-gold);
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--sunlit-gold);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: -2rem auto 3rem;
+            color: var(--granite-grey);
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+
+        /* Hero Section */
+        .editorial-hero {
+            min-height: 80vh;
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+                url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="40" height="40" fill="white" fill-opacity="0.08"/><circle cx="20" cy="20" r="8" fill="white" fill-opacity="0.12"/></svg>'),
+                linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2670&auto=format&fit=crop');
+            background-blend-mode: overlay, normal, multiply, normal;
+            background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+            background-position: top left, center center, center center, center center;
+            background-size: auto, cover, cover, cover;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            color: var(--platinum);
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 2.5rem;
+            color: var(--sky-blue);
+            font-weight: 400;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--sunlit-gold);
+            color: var(--deep-navy);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 214, 107, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--deep-navy);
+            color: var(--sunlit-gold);
+            border: 2px solid var(--sunlit-gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--cream-white);
+            color: var(--deep-navy);
+            transform: translateY(-2px);
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            padding: 3rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 214, 107, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .feature-card:hover::before {
+            left: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-image {
+            width: 100%;
+            height: 200px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .feature-card:hover .feature-image img {
+            transform: scale(1.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--sunlit-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--deep-navy);
+        }
+
+        .feature-description {
+            color: var(--granite-grey);
+            line-height: 1.8;
+        }
+
+        /* Fashion Story */
+        .fashion-story-container {
+            background: var(--cream-white);
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .fashion-story-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/light-wool.png');
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .story-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            margin-bottom: 5rem;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(120deg, var(--cream-white) 60%, var(--sky-blue) 100%);
+            border-radius: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+            overflow: visible;
+            align-items: center;
+            transition: box-shadow 0.3s;
+        }
+
+        .story-section:hover {
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+        }
+
+        .story-section .accent-bar {
+            position: absolute;
+            top: 10%;
+            left: -30px;
+            width: 10px;
+            height: 80%;
+            background: var(--sunlit-gold);
+            border-radius: 10px;
+            z-index: 1;
+            opacity: 0.7;
+        }
+
+        .story-section:nth-child(even) .accent-bar {
+            left: auto;
+            right: -30px;
+            background: var(--accent-coral);
+        }
+
+        .story-section .story-image {
+            position: relative;
+            z-index: 2;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+            transform: rotate(-2deg) translateY(-10px);
+            transition: transform 0.4s cubic-bezier(.4, 2, .6, 1), box-shadow 0.3s;
+        }
+
+        .story-section:nth-child(even) .story-image {
+            transform: rotate(2deg) translateY(10px);
+        }
+
+        .story-section:hover .story-image {
+            transform: scale(1.04) rotate(-1deg) translateY(-5px);
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+        }
+
+        .story-section:nth-child(even):hover .story-image {
+            transform: scale(1.04) rotate(1deg) translateY(5px);
+        }
+
+        .story-section .story-content {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+            padding: 2.5rem 2rem;
+            margin: 0 0 0 -40px;
+        }
+
+        .story-section:nth-child(even) .story-content {
+            margin: 0 -40px 0 0;
+        }
+
+        @media (max-width: 992px) {
+            .story-section {
+                flex-direction: column;
+                padding: 1rem 0;
+            }
+
+            .story-section .story-content,
+            .story-section .story-image {
+                margin: 0;
+            }
+
+            .story-section .accent-bar,
+            .story-section:nth-child(even) .accent-bar {
+                display: none;
+            }
+        }
+
+        .story-section:nth-child(even) .story-content {
+            order: 2;
+        }
+
+        .story-section:nth-child(even) .story-image {
+            order: 1;
+        }
+
+        .story-content,
+        .story-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .story-image {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+
+        .story-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .story-section:hover .story-image img {
+            transform: scale(1.05);
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 1rem;
+            font-size: 0.9rem;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .story-content {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .story-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-icon {
+            font-size: 2rem;
+        }
+
+        .story-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+        }
+
+        .story-text {
+            color: var(--granite-grey);
+            line-height: 1.8;
+        }
+
+        .story-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .story-quote {
+            font-style: italic;
+            border-left: 4px solid var(--sunlit-gold);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            color: var(--deep-navy);
+            font-size: 1.2rem;
+        }
+
+        .story-cta {
+            text-align: center;
+            background: var(--deep-navy);
+            color: white;
+            padding: 3rem;
+            border-radius: 15px;
+            margin-top: 3rem;
+        }
+
+        .story-cta p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            padding: 5rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, var(--cream-white) 0%, var(--sky-blue) 100%);
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 600px;
+            margin: 2rem auto;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem 1.5rem;
+            border: 2px solid var(--sunlit-gold);
+            border-radius: 50px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        /* Timeline Decoration */
+        .timeline {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: var(--sunlit-gold);
+            z-index: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background: var(--sunlit-gold);
+            border-radius: 50%;
+            border: 4px solid var(--cream-white);
+            z-index: 1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .story-section {
+                flex-direction: column;
+            }
+
+            .story-section:nth-child(even) .story-content,
+            .story-section:nth-child(even) .story-image {
+                order: 0;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .newsletter-input {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .feature-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .fade-in:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .fade-in:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .fade-in:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+
+        .fade-in:nth-child(4) {
+            animation-delay: 0.7s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="editorial-hero">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">Editorial Excellence</h1>
+                <p class="hero-subtitle fade-in">Discover the intersection of global fashion trends and Malawian
+                    cultural
+                    heritage</p>
+                <div class="hero-cta">
+                    <a href="/index.html" class="btn btn-primary fade-in">Explore Features</a>
+                    <a href="/features/newsletter.html" class="btn btn-secondary fade-in">Go Pro</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="container">
+            <h2 class="section-title fade-in">Editorial Highlights</h2>
+            <p class="section-subtitle fade-in">Curated collections that blend international luxury with authentic
+                Malawian
+                craftsmanship</p>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2670&auto=format&fit=crop"
+                            alt="Luxury Fashion">
+                    </div>
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="feature-title">Luxury Fashion</h3>
+                    <p class="feature-description">Curated collections from Gucci, Dior, Saint Laurent, and emerging
+                        designers. Experience haute couture like never before.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=2574&auto=format&fit=crop"
+                            alt="Cultural Heritage">
+                    </div>
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3 class="feature-title">Cultural Heritage</h3>
+                    <p class="feature-description">Celebrating Malawian traditions through chitenje patterns, local
+                        artisans, and contemporary African fashion.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1554568218-0f1715e72254?q=80&w=2670&auto=format&fit=crop"
+                            alt="Editorial Photography">
+                    </div>
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="feature-title">Editorial Photography</h3>
+                    <p class="feature-description">Stunning visual narratives that capture the essence of fashion
+                        against
+                        Malawi's breathtaking landscapes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fashion Story Section -->
+        <section id="story" class="fashion-story-container">
+            <div class="timeline"></div>
+            <div class="timeline-dot" style="top: 10%;"></div>
+            <div class="timeline-dot" style="top: 30%;"></div>
+            <div class="timeline-dot" style="top: 50%;"></div>
+            <div class="timeline-dot" style="top: 70%;"></div>
+            <div class="timeline-dot" style="top: 90%;"></div>
+
+            <div class="container">
+                <h2 class="section-title fade-in">Threaded with Heritage</h2>
+                <p class="section-subtitle fade-in">The Beautiful Journey of Malawian Fashion</p>
+
+                <div class="fashion-story-container">
+                    <!-- Intro Section -->
+                    <div class="story-section intro-section fade-in">
+                        <div class="accent-bar"></div>
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2669&auto=format&fit=crop"
+                                alt="Malawian landscape with traditional fabrics">
+                            <div class="image-caption">The Warm Heart of Africa - Where Fashion Stories Begin</div>
+                        </div>
+                        <div class="story-content">
+                            <h3 class="story-title">A Journey Begins in the Warm Heart of Africa</h3>
+                            <div class="story-text">
+                                <p>Long before global runways showcased Afro-inspired prints and designers embraced
+                                    earthy
+                                    minimalism, Malawi was already a land rich with textile stories.</p>
+                                <p>Nestled among lakes, mountains, and warm-hearted people, Malawi's fashion identity
+                                    has
+                                    always been deeply tied to its culture, environment, and creativity. From handwoven
+                                    chitenje fabrics to contemporary fusion designs, Malawian fashion is a testament to
+                                    resilience, reinvention, and raw beauty.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Roots Section -->
+                    <div class="story-section roots-section fade-in">
+                        <div class="accent-bar"></div>
+                        <div class="story-content">
+                            <div class="story-header">
+                                <span class="story-icon"><i class="fas fa-tshirt"></i></span>
+                                <h3 class="story-title">The Roots: Traditional Fabrics and Clothing</h3>
+                            </div>
+                            <div class="story-text">
+                                <p>Malawian fashion has its deepest roots in the chitenje – a vibrant, patterned fabric
+                                    worn
+                                    across generations. Used as a wrap skirt, a baby carrier, or a headscarf, the
+                                    chitenje
+                                    is more than fabric – it's a language. The prints tell stories of love, community,
+                                    politics, and even proverbs.</p>
+                                <blockquote class="story-quote">
+                                    "Every fold, every knot, every print spoke louder than words could."
+                                </blockquote>
+                                <p>In pre-colonial times, people in Malawi often used animal hides or bark cloths, with
+                                    styles differing among tribes such as the Chewa, Yao, Tumbuka, and Ngoni. Jewelry
+                                    from
+                                    beads, shells, and copper wire often completed the look, symbolizing social status
+                                    or
+                                    spiritual beliefs.</p>
+                            </div>
+                        </div>
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=2670&auto=format&fit=crop"
+                                alt="Traditional Malawian fabrics">
+                            <div class="image-caption">Chitenje fabrics - The living language of Malawian culture</div>
+                        </div>
+                    </div>
+
+                    <!-- Colonial Section -->
+                    <div class="story-section colonial-section fade-in">
+                        <div class="accent-bar"></div>
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=2670&auto=format&fit=crop"
+                                alt="Historical colonial influence on fashion">
+                            <div class="image-caption">The blending of worlds - Colonial meets traditional</div>
+                        </div>
+                        <div class="story-content">
+                            <div class="story-header">
+                                <span class="story-icon"><i class="fas fa-needle"></i></span>
+                                <h3 class="story-title">Colonial Shadows and Western Influence</h3>
+                            </div>
+                            <div class="story-text">
+                                <p>The arrival of colonial rule and missionary education brought a wave of Western
+                                    fashion
+                                    influence. Western-style tailoring and school uniforms started replacing traditional
+                                    wraps, especially in urban areas. Churches often encouraged "modest dress",
+                                    replacing
+                                    ornate tribal wear with more conservative silhouettes.</p>
+                                <p>Yet, even then, Malawians resisted full Westernization, blending suits with local
+                                    prints,
+                                    or turning ties into waist wraps. This became a form of fashion resistance: "We will
+                                    wear what is introduced, but in our own voice."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Independence Section -->
+                    <div class="story-section independence-section fade-in">
+                        <div class="accent-bar"></div>
+                        <div class="story-content">
+                            <div class="story-header">
+                                <span class="story-icon"><i class="fas fa-flag"></i></span>
+                                <h3 class="story-title">Independence and Cultural Renaissance</h3>
+                            </div>
+                            <div class="story-text">
+                                <p>After Malawi's independence in 1964, a cultural and fashion renaissance took root.
+                                    The
+                                    government began promoting "Malawian identity" in arts, music—and dress. Designers
+                                    started embracing local materials and cuts.</p>
+                                <blockquote class="story-quote">
+                                    "To dress in chitenje was not backward—it was powerful."
+                                </blockquote>
+                                <p>Performers like Ethel Kamwendo Banda and Wambali Mkandawire inspired new visual
+                                    aesthetics in fashion. The chitenje gained more urban respect—appearing in weddings,
+                                    official events, and even modern tailoring.</p>
+                            </div>
+                        </div>
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2620&auto=format&fit=crop"
+                                alt="Modern Malawian fashion">
+                            <div class="image-caption">The independence era brought new pride to traditional styles
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modern Section -->
+                    <div class="story-section modern-section fade-in">
+                        <div class="accent-bar"></div>
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2670&auto=format&fit=crop"
+                                alt="Contemporary Malawian street style">
+                            <div class="image-caption">Today's Malawian fashion - A global conversation</div>
+                        </div>
+                        <div class="story-content">
+                            <div class="story-header">
+                                <span class="story-icon"><i class="fas fa-city"></i></span>
+                                <h3 class="story-title">2000s to Today – The Rise of Urban Malawian Fashion</h3>
+                            </div>
+                            <div class="story-text">
+                                <p>The 21st century brought digital access, global fashion exposure, and a boom in
+                                    Malawian
+                                    designers. Tailors in Blantyre, Mzuzu, and Lilongwe redefined style—blending
+                                    traditional
+                                    roots with international tastes.</p>
+                                <p>Brands like Mibawa, House of Agyo, Nzika Wear, and Creative Base Africa began rising.
+                                    Platforms like Malawi Fashion Week, Fashion Malawi Edition, and Umodzi Youth
+                                    Organisation gave local talent a stage.</p>
+                                <p>Urban youth began mixing jeans with chitenje vests, or hoodies with tribal
+                                    embroidery,
+                                    forging a new style dialect where global meets local, tradition meets TikTok, and
+                                    runway
+                                    meets rural.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-cta fade-in">
+                        <p>Want to dive deeper into Malawi's fashion evolution?</p>
+                        <div class="cta-buttons">
+                            <a href="#features" class="btn btn-primary">Explore Our Archives</a>
+                            <a href="#newsletter" class="btn btn-secondary">Get Cultural Updates</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="newsletter-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Stay In Style</h2>
+                <p class="fade-in">Get the latest fashion insights, cultural features, and exclusive content delivered
+                    to
+                    your inbox.</p>
+                <form class="newsletter-form fade-in" id="newsletterForm">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <div id="footer"></div>
+    </main>
+
+    <script>
+        // Simple fade-in animation for elements
+        document.addEventListener('DOMContentLoaded', function () {
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            // Trigger animations when elements come into view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeElements.forEach(element => {
+                element.style.opacity = 0;
+                observer.observe(element);
+            });
+
+            // Newsletter form submission
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const email = this.querySelector('.newsletter-input').value;
+
+                    // Simple validation
+                    if (email && email.includes('@')) {
+                        alert('Thank you for subscribing to Mountain Fashion Magazine!');
+                        this.reset();
+                    } else {
+                        alert('Please enter a valid email address.');
+                    }
+                });
+            }
+        });
+    </script>
+    <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QWVCP8Y72"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5QWVCP8Y72');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2708873046269509"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | Mountain Fashion Magazine</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --sky-blue: #B8D8EB;
+            --sunlit-gold: #FFD66B;
+            --earthy-green: #7BA67C;
+            --granite-grey: #4D4D4D;
+            --cream-white: #F9F6F1;
+            --deep-navy: #1a1a2e;
+            --accent-coral: #ff6b6b;
+            --platinum: #e5e4e2;
+            --diamond: #b9f2ff;
+            --soft-gold: #E6C35C;
+            --light-navy: #2A2A4A;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, var(--platinum) 0%, var(--cream-white) 100%);
+            color: var(--deep-navy);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-header {
+            background: var(--deep-navy);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px var(--deep-navy);
+        }
+
+        .appointment-header {
+            background: linear-gradient(rgba(26, 26, 46, 0.95), rgba(26, 26, 46, 0.95)),
+                url('https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=80&w=2670&auto=format&fit=crop') center/cover;
+            padding: 4rem 2rem;
+            text-align: center;
+            color: var(--cream-white);
+        }
+
+        .appointment-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 1rem;
+            color: var(--soft-gold);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .appointment-header p {
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.7;
+            color: var(--cream-white);
+        }
+
+        .appointment-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .appointment-types {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+
+        .type-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 350px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .type-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            border-color: var(--soft-gold);
+        }
+
+        .type-card i {
+            font-size: 3.5rem;
+            color: var(--soft-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .type-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--deep-navy);
+        }
+
+        .type-card p {
+            color: var(--granite-grey);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .type-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 1.5rem 0;
+        }
+
+        .type-card ul li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+        }
+
+        .type-card ul li i {
+            font-size: 1.2rem;
+            color: var(--earthy-green);
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            margin-bottom: 3rem;
+        }
+
+        .form-header {
+            background: var(--deep-navy);
+            color: var(--soft-gold);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .form-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--sunlit-gold);
+        }
+        .form-header p {
+            font-size: 1.1rem;
+            color: var(--cream-white);
+            margin-bottom: 0;
+        }
+
+        .form-content {
+            padding: 2rem;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 2400px;
+            /* Height of your iframe */
+            overflow: hidden;
+            background-color: var(--sunlit-gold);
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .appointment-info {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .appointment-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--deep-navy);
+            position: relative;
+            display: inline-block;
+        }
+
+        .appointment-info h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--soft-gold);
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-item i {
+            font-size: 1.8rem;
+            color: var(--soft-gold);
+        }
+
+        .contact-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+            color: var(--deep-navy);
+        }
+
+        .contact-text p {
+            color: var(--granite-grey);
+        }
+        @media (max-width: 992px) {
+            .appointment-types {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .type-card {
+                padding: 1.8rem;
+            }
+
+            .form-content {
+                padding: 1rem;
+            }
+
+            .contact-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <main class="main-content">
+
+        <header class="appointment-header">
+            <div class="container">
+                <h1>Book Your Appointment</h1>
+                <p>Schedule a consultation with our fashion experts and experience personalized style guidance tailored
+                    to your unique personality and cultural heritage.</p>
+            </div>
+        </header>
+
+        <div class="appointment-container">
+            <div class="appointment-types">
+                <div class="type-card">
+                    <i class="fas fa-user-astronaut"></i>
+                    <h3>Personal Styling</h3>
+                    <p>Transform your look with our expert guidance</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Wardrobe assessment</li>
+                        <li><i class="fas fa-check-circle"></i> Body type analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Personal shopping session</li>
+                        <li><i class="fas fa-check-circle"></i> Style personality profile</li>
+                    </ul>
+                </div>
+
+                <div class="type-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Design Consultation</h3>
+                    <p>Bring your creative vision to life</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Fabric selection guidance</li>
+                        <li><i class="fas fa-check-circle"></i> Pattern and textile advice</li>
+                        <li><i class="fas fa-check-circle"></i> Technical design review</li>
+                        <li><i class="fas fa-check-circle"></i> Production planning</li>
+                    </ul>
+                </div>
+
+                <div class="type-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Editorial Session</h3>
+                    <p>Professional photoshoot experience</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Concept development</li>
+                        <li><i class="fas fa-check-circle"></i> Location scouting</li>
+                        <li><i class="fas fa-check-circle"></i> Professional hair & makeup</li>
+                        <li><i class="fas fa-check-circle"></i> Digital image delivery</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Schedule Your Appointment</h2>
+                    <p>Complete the form below to book your consultation</p>
+                </div>
+                <div class="form-content">
+                    <div class="iframe-container">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSfklfN_QHDXgElDtby31AdDnGEMiQ-I1pObqpU6in8TnvQYzA/viewform?embedded=true"
+                            width="640" height="2267" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appointment-info">
+                <h3>Have Questions?</h3>
+                <p>Our team is here to help you with any questions about our services or the booking process.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:mount.fas.magazine@gmail.com">mount.fas.magazine@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+265885157566">+265 885 157 566</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-text">
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 9am - 6pm CAT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </main>
+
+    <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/loader.js"></script>
+
+</body>
+
+</html>

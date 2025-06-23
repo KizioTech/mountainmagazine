@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QWVCP8Y72"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5QWVCP8Y72');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2708873046269509"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>About Us | Mountain Fashion Magazine</title>
+    <style>
+        /* ==== GLOBAL STYLES ==== */
+        :root {
+            --sky-blue: #B8D8EB;
+            --sunlit-gold: #FFD66B;
+            --earthy-green: #7BA67C;
+            --granite-grey: #4D4D4D;
+            --cream-white: #F9F6F1;
+            --deep-navy: #1a1a2e;
+            --accent-coral: #ff6b6b;
+            --platinum: #e5e4e2;
+            --diamond: #b9f2ff;
+            --text-primary: #333;
+            --text-secondary: #555;
+            --bg-primary: #f9f6f1;
+            --bg-secondary: #ffffff;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--sunlit-gold);
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--sunlit-gold);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            color: var(--granite-grey);
+            font-weight: 400;
+            font-size: 1.1rem;
+        }
+
+        .page-section {
+            padding: 5rem 0;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s ease;
+        }
+
+        /* ==== HERO SECTION ==== */
+        .hero-contact {
+            min-height: 50vh;
+            background:
+                linear-gradient(rgba(26, 26, 46, 0.7), rgba(120, 180, 220, 0.4)),
+                url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="1.5" fill="%23FFD66B"/><circle cx="10" cy="50" r="1" fill="%23B8D8EB"/><circle cx="50" cy="10" r="1" fill="%237BA67C"/><rect x="0" y="0" width="60" height="60" fill="none"/></svg>'),
+                url('https://images.unsplash.com/photo-1586973065019-f84f2e1f2a6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2576&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 5rem;
+            background-blend-mode: overlay, normal, normal;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            margin-bottom: 2rem;
+            color: var(--cream-white);
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ==== CONTACT GRID ==== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .contact-card {
+            background: var(--card-bg);
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: var(--sunlit-gold);
+        }
+
+        .contact-icon {
+            font-size: 3rem;
+            color: var(--sunlit-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-card h3 {
+            font-size: 1.5rem;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .contact-card p {
+            color: var(--granite-grey);
+            font-size: 1.1rem;
+        }
+
+        .contact-card p a {
+            color: var(--granite-grey);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card p a:hover {
+            color: var(--sunlit-gold);
+        }
+
+        /* ==== MAP CONTAINER ==== */
+        .map-container {
+            margin: 4rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+        /* ==== TEAM SECTION ==== */
+        .team-section {
+            padding: 5rem 0;
+            background-color: var(--cream-white);
+        }
+
+        .team-members-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            justify-items: center;
+        }
+
+        .team-member-card {
+            width: 100%;
+            max-width: 340px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 1rem auto;
+            border: 4px solid var(--cream-white);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease;
+        }
+
+        .team-member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .team-member-base-info {
+            transition: opacity 0.3s ease;
+        }
+
+        .team-member-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--deep-navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .team-member-role {
+            font-size: 0.9rem;
+            color: var(--sunlit-gold);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .team-member-details {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            text-align: left;
+            transition: opacity 0.5s ease-in-out, max-height 0.6s ease-in-out;
+            margin-top: 1rem;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+        }
+
+        .team-member-details h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--deep-navy);
+            font-size: 0.95rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .team-member-details p.team-member-description {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--granite-grey);
+            margin-bottom: 0.8rem;
+        }
+
+        .team-member-details ul {
+            list-style: none;
+            padding-left: 0;
+            font-size: 0.85rem;
+            color: var(--granite-grey);
+        }
+
+        .team-member-details ul li {
+            margin-bottom: 0.3rem;
+            position: relative;
+            padding-left: 18px;
+        }
+
+        .team-member-details ul li::before {
+            content: "\f005";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--sunlit-gold);
+            position: absolute;
+            left: 0;
+            top: 1px;
+        }
+
+        /* Hover Effects */
+        .team-members-container:hover .team-member-card:not(:hover) {
+            transform: scale(0.95);
+            opacity: 0.7;
+        }
+
+        .team-member-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .team-member-card:hover .team-member-photo {
+            transform: scale(1.1);
+        }
+
+        .team-member-card:hover .team-member-details {
+            opacity: 1;
+            max-height: 400px;
+        }
+
+        /* ==== RESPONSIVE STYLES ==== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .contact-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .team-members-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .team-member-card {
+                max-width: 100%;
+            }
+
+            .map-container iframe {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .team-member-photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .team-member-name {
+                font-size: 1.3rem;
+            }
+
+            .contact-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .contact-icon {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-contact">
+            <div class="hero-content">
+                <h1 class="hero-title">Contact Us</h1>
+                <p class="hero-subtitle">Connect with the Mountain Fashion Magazine team</p>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <h2 class="section-title fade-in">Get In Touch</h2>
+                <p class="section-subtitle fade-in">Ready to collaborate, share your story, or have questions about
+                    fashion in Malawi? We'd love to hear from you.</p>
+
+                <div class="contact-grid fade-in">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:mount.fas.magazine@gmail.com">mount.fas.magazine@gmail.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+265885157566">+265 885 157 566</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-instagram contact-icon"></i>
+                        <h3>Follow Us</h3>
+                        <p><a href="https://www.instagram.com/mountainmagazine265?igsh=YmNuZnNncnE0cjE0"
+                                target="_blank">@MountainMagazine265</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section" id="team">
+            <div class="container">
+                <h2 class="section-title">Meet Our Visionaries</h2>
+                <p class="section-subtitle">The creative minds shaping Mountain Fashion Magazine and celebrating
+                    Malawian style.</p>
+
+                <div class="team-members-container">
+                    <!-- Team Member 1 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/banken mtsiriza.jpg"
+                                alt="Banken Mtsiriza - Chief Executive Officer">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Banken Mtsiriza</h3>
+                            <p class="team-member-role">Chief Executive Officer</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Banken is the driving force behind Mountain Fashion, with
+                                a keen eye for storytelling that bridges Malawian culture with global fashion
+                                narratives.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>Bachelor of Education in Human Ecology</li>
+                                <li>Experienced in teaching fashion and design.</li>
+                            </ul>
+                            <h4>Achievements:</h4>
+                            <ul>
+                                <li>Founder of Mountain Fashion Magazine</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/lekeleni chinkhota.jpg" alt="Lekeleni Chinkhota - Chief Editor">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Lekereni Chinkhota</h3>
+                            <p class="team-member-role">Chief Editor</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Lekereni is the chief editor of Mountain Fashion
+                                Magazine.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>Bachelor of Arts In Language and Communication Studies</li>
+                                <li>Experienced in writing and editing.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/blessings mtsiriza.jpg"
+                                alt="Blessings Mtsiriza - Business and Financial Manager">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Blessings Mtsiriza</h3>
+                            <p class="team-member-role">Business and Financial Manager</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Blessing manages the business and financial operations of
+                                Mountain Fashion, ensuring sustainable growth and supporting the magazine's vision with
+                                strong financial leadership.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>Bachelor of Education (Business Studies)</li>
+                                <li>Experienced in business and financial management.</li>
+                            </ul>
+                            <h4>Achievements:</h4>
+                            <ul>
+                                <li>He is a secondary school teacher (business studies, mathematics and computer
+                                    studies)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 4 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/onika mbewe.jpg"
+                                alt="Onika Malinki Mbewe - Creative and Fashion Advisor">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Onika Malinki Mbewe</h3>
+                            <p class="team-member-role">Creative and Fashion Advisor</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">A fashion expert with global experience in teaching
+                                fashion and design in institutions of high learning. She is a fashion designer and a
+                                fashion consultant.</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 5 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/kizio.jpg" alt="Josophat Makawa - IT Manager">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Josophat Makawa</h3>
+                            <p class="team-member-role">IT Manager</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Josophat manages our IT infrastructure and ensures our
+                                digital platforms run smoothly.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>Fourth Year Student | Bachelor of Science in Mathematics - University of Malawi</li>
+                                <li>Self-taught Web Developer with passion for technology and computer science</li>
+                            </ul>
+                            <h4>Achievements:</h4>
+                            <ul>
+                                <li>Founder of JMC | Math & Academics which deals with tech-based learning of any
+                                    Mathematics course and Softwares (like matlab, maple, mathematica, e.t.c.).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 6 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/fyabupe nkumbwa.jpg" alt="Fyabupe Nkumbwa - Model">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Fyabupe Mkumbwa</h3>
+                            <p class="team-member-role">Model</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Fyabupe is a passionate fashion enthusiast and a Creative
+                                Arts student majoring Fashion Design and Drama, she believes fashion is a powerful
+                                medium for self-expression and storytelling.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>First Year Student | Bachelor of Arts in Creative Arts at University of Malawi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 7 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/linda saka.jpg" alt="Linda Saka - Model">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Linda Saka</h3>
+                            <p class="team-member-role">Model</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Linda is a passionate fashion enthusiast and a Fashion
+                                Design student.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>First Year Student | Bachelor of Arts in Fashion and Design at University of Malawi
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 8 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/limbani longwe.jpg"
+                                alt="Limbani Longwe - Photography and Graphic Design Intern">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Limbani Longwe</h3>
+                            <p class="team-member-role">Photography and Graphic Design Intern</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Limbani is a photography and graphic design intern at
+                                Mountain Fashion Magazine.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>First Year Student | Bachelor of Arts in Fashion and Design at University of Malawi
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.7645872606577!2d35.33467057390891!3d-15.389230613106637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d904e65366a83f%3A0xf1f319d6a0c14cf9!2sUniversity%20of%20Malawi!5e0!3m2!1sen!2smw!4v1749397300414!5m2!1sen!2smw"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QWVCP8Y72"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5QWVCP8Y72');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2708873046269509"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Luxury | Mountain Fashion Magazine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <style>
+        :root {
+            --sky-blue: #B8D8EB;
+            --sunlit-gold: #FFD66B;
+            --earthy-green: #7BA67C;
+            --granite-grey: #4D4D4D;
+            --cream-white: #F9F6F1;
+            --deep-navy: #1a1a2e;
+            --accent-coral: #ff6b6b;
+            --platinum: #e5e4e2;
+            --diamond: #b9f2ff;
+            --text-primary: #333;
+            --text-secondary: #555;
+            --bg-primary: #f9f6f1;
+            --bg-secondary: #ffffff;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--cream-white);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        #showcase {
+            background: var(--deep-navy);
+            color: var(--platinum);
+            position: relative;
+            padding: 6rem 0 4rem;
+            overflow: hidden;
+        }
+
+        #showcase::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent);
+            z-index: 0;
+        }
+
+        #showcase h1,
+        #showcase h2,
+        #showcase h3,
+        #showcase h4,
+        #showcase h5,
+        #showcase h6 {
+            color: var(--sunlit-gold);
+        }
+
+        #showcase p,
+        #showcase li,
+        #showcase span,
+        #showcase .section-subtitle,
+        #showcase .luxury-header p,
+        #showcase .luxury-content p,
+        #showcase .brand-showcase p,
+        #showcase .testimonial p,
+        #showcase .beauty-cta p {
+            color: var(--platinum);
+            opacity: 0.9;
+        }
+
+        #showcase .btn-primary {
+            background: var(--sunlit-gold);
+            color: var(--deep-navy);
+        }
+
+        #showcase .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 214, 107, 0.4);
+        }
+
+        #showcase .btn-secondary {
+            background: transparent;
+            color: var(--sunlit-gold);
+            border: 2px solid var(--sunlit-gold);
+        }
+
+        #showcase .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        #showcase .luxury-benefits li::before,
+        #showcase .luxury-benefits ul li::before {
+            color: var(--sunlit-gold);
+        }
+
+        #showcase .testimonial::before {
+            color: rgba(255, 214, 107, 0.3);
+        }
+
+        #showcase .client-info h4 {
+            color: var(--platinum);
+        }
+
+        #showcase .client-info p {
+            color: rgba(229, 228, 226, 0.7);
+        }
+
+        #showcase .luxury-overlay h4,
+        #showcase .luxury-overlay p {
+            color: white;
+        }
+
+        #showcase .brand-logo img {
+            filter: brightness(0) invert(1);
+        }
+
+        #showcase .luxury-benefits strong {
+            color: var(--platinum);
+        }
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--sunlit-gold);
+            color: var(--deep-navy);
+            color: var(--deep-navy) !important;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 214, 107, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--sunlit-gold);
+            border: 2px solid var(--sunlit-gold);
+            color: var(--sunlit-gold) !important;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+        /* Rest of your existing showcase CSS below */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .beauty-hero {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 5rem;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .beauty-hero h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .beauty-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .luxury-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .luxury-category {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .luxury-category:hover {
+            transform: translateY(-10px);
+        }
+
+        .luxury-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .luxury-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .luxury-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .luxury-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .luxury-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 1/1.2;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .luxury-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .luxury-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .luxury-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .luxury-item:hover .luxury-overlay {
+            transform: translateY(0);
+        }
+
+        .luxury-overlay h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .luxury-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .luxury-benefits {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .luxury-benefits li {
+            margin-bottom: 0.8rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .luxury-benefits li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
+
+        .brand-showcase {
+            text-align: center;
+            padding: 4rem 0;
+            margin: 4rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .brand-showcase h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .brand-showcase p {
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .brand-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .brand-logo {
+            width: 150px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-logo:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .brand-logo img {
+            max-width: 100%;
+            max-height: 50px;
+        }
+
+        .wellness-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            margin: 5rem 0;
+        }
+
+        .wellness-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .wellness-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .wellness-content p {
+            margin-bottom: 2rem;
+        }
+
+        .luxury-benefits h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--platinum);
+        }
+
+        .luxury-benefits ul {
+            list-style: none;
+        }
+
+        .luxury-benefits ul li {
+            margin-bottom: 1.2rem;
+            padding-left: 0;
+        }
+
+        .luxury-benefits ul li::before {
+            content: '\f005';
+        }
+
+        .wellness-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .wellness-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .wellness-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-weight: 400;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial::before {
+            content: '\201C';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 5rem;
+            opacity: 0.2;
+            font-family: serif;
+        }
+
+        .testimonial p {
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            position: relative;
+            z-index: 2;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .client-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--sunlit-gold);
+        }
+
+        .client-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .client-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .client-info p {
+            opacity: 0.7;
+            margin: 0;
+            font-style: normal;
+        }
+
+        .beauty-cta {
+            text-align: center;
+            padding: 4rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            margin: 5rem 0 3rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .beauty-cta h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .beauty-cta p {
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        .delay-4 {
+            animation-delay: 0.8s;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .luxury-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .wellness-section {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .brand-logos {
+                gap: 1.5rem;
+            }
+
+            .brand-logo {
+                width: 120px;
+                height: 70px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .luxury-category {
+                padding: 1.5rem;
+            }
+
+            .beauty-cta {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <main class="main-content">
+        <section class="page-section" id="showcase">
+            <div class="container">
+                <!-- Hero Introduction -->
+                <div class="beauty-hero fade-in">
+                    <h2>Beauty & Luxury</h2>
+                    <p>Discover the pinnacle of elegance where world-class beauty meets Malawian craftsmanship. Our
+                        curated collection represents the finest in luxury skincare, exquisite fragrances, and wellness
+                        experiences that elevate your senses and nourish your soul.</p>
+                    <div class="cta-buttons">
+                        <a href="/public/features/editorial.html" class="btn btn-primary">Explore Collections</a>
+                        <a href="/components/appointments.html" class="btn btn-secondary">Book Consultation</a>
+                    </div>
+                </div>
+
+                <!-- Luxury Categories -->
+                <div class="luxury-categories">
+                    <!-- Skincare -->
+                    <div class="luxury-category fade-in delay-1">
+                        <div class="luxury-header">
+                            <h3>Artisanal Skincare</h3>
+                            <p>Nature's finest ingredients for radiant beauty</p>
+                        </div>
+                        <div class="luxury-content">
+                            <p>Indulge in our exclusive skincare range featuring rare Malawian botanicals ethically
+                                sourced from the Mulanje Mountain region. Our formulations blend centuries-old
+                                traditions with cutting-edge science to deliver transformative results.</p>
+
+                            <div class="luxury-grid">
+                                <div class="luxury-item floating" style="animation-delay: 0.1s">
+                                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=2780&auto=format&fit=crop"
+                                        alt="Luxury Skincare Set">
+                                    <div class="luxury-overlay">
+                                        <h4>Mulanje Cedar Elixir</h4>
+                                        <p>Age-defying serum with rare cedar extract</p>
+                                    </div>
+                                </div>
+                                <div class="luxury-item floating" style="animation-delay: 0.3s">
+                                    <img src="https://images.unsplash.com/photo-1620916297395-335a6b4b1a73?q=80&w=2787&auto=format&fit=crop"
+                                        alt="Luxury Face Oil">
+                                    <div class="luxury-overlay">
+                                        <h4>Lake Malawi Mineral Mask</h4>
+                                        <p>Detoxifying treatment with lake minerals</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="luxury-benefits">
+                                <li>Ethically sourced Malawian botanicals</li>
+                                <li>Sustainable packaging from recycled materials</li>
+                                <li>Cruelty-free and vegan formulations</li>
+                                <li>Handcrafted in small batches</li>
+                            </ul>
+
+                            <a href="#" class="btn btn-primary" style="margin-top: 1.5rem;">Discover Skincare</a>
+                        </div>
+                    </div>
+
+                    <!-- Fragrances -->
+                    <div class="luxury-category fade-in delay-2">
+                        <div class="luxury-header">
+                            <h3>Signature Fragrances</h3>
+                            <p>Capturing the essence of Malawi</p>
+                        </div>
+                        <div class="luxury-content">
+                            <p>Our perfumers have masterfully captured the soul of Malawi in each bottle. From the misty
+                                highlands of Zomba to the sun-drenched shores of Lake Malawi, experience olfactory
+                                journeys that tell stories of our beautiful land.</p>
+
+                            <div class="luxury-grid">
+                                <div class="luxury-item floating" style="animation-delay: 0.2s">
+                                    <img src="https://images.unsplash.com/photo-1595425977377-6aaf06c4457e?q=80&w=2787&auto=format&fit=crop"
+                                        alt="Luxury Perfume">
+                                    <div class="luxury-overlay">
+                                        <h4>Nyika Twilight</h4>
+                                        <p>Notes of wild orchid and evening dew</p>
+                                    </div>
+                                </div>
+                                <div class="luxury-item floating" style="animation-delay: 0.4s">
+                                    <img src="https://images.unsplash.com/photo-1590732870481-481f7d7cf2b0?q=80&w=2787&auto=format&fit=crop"
+                                        alt="Perfume Making">
+                                    <div class="luxury-overlay">
+                                        <h4>Shire Sunset</h4>
+                                        <p>Warm amber with tropical fruit accents</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Each fragrance is a collaboration with local communities, ensuring fair trade practices
+                                and supporting sustainable harvesting of indigenous botanicals. Our perfumes come in
+                                hand-blown glass bottles featuring traditional Malawian patterns.</p>
+
+                            <a href="#" class="btn btn-primary" style="margin-top: 1.5rem;">Explore Fragrances</a>
+                        </div>
+                    </div>
+
+                    <!-- Makeup -->
+                    <div class="luxury-category fade-in delay-3">
+                        <div class="luxury-header">
+                            <h3>Luxury Makeup</h3>
+                            <p>Colors inspired by Malawi's landscapes</p>
+                        </div>
+                        <div class="luxury-content">
+                            <p>Our makeup collection celebrates the vibrant hues of Malawi - from the fiery sunsets over
+                                Lake Malawi to the lush greens of the tea plantations. Experience high-performance
+                                pigments with skincare benefits in every product.</p>
+
+                            <div class="luxury-grid">
+                                <div class="luxury-item floating" style="animation-delay: 0.3s">
+                                    <img src="https://images.unsplash.com/photo-1571781418606-70265b9cce90?q=80&w=2787&auto=format&fit=crop"
+                                        alt="Luxury Makeup">
+                                    <div class="luxury-overlay">
+                                        <h4>Mulanje Mountain Palette</h4>
+                                        <p>Earthy tones with mineral-rich formulas</p>
+                                    </div>
+                                </div>
+                                <div class="luxury-item floating" style="animation-delay: 0.5s">
+                                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=2780&auto=format&fit=crop"
+                                        alt="Luxury Lipstick">
+                                    <div class="luxury-overlay">
+                                        <h4>Lake Malawi Lip Collection</h4>
+                                        <p>Hydrating formulas in aquatic hues</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>All products are enriched with baobab oil, known for its nourishing properties, and
+                                packaged in reusable containers featuring artwork by Malawian artists. Our formulas are
+                                dermatologist-tested and suitable for all skin types.</p>
+
+                            <a href="#" class="btn btn-primary" style="margin-top: 1.5rem;">View Makeup Collection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Brand Showcase -->
+                <div class="brand-showcase fade-in">
+                    <h3>Curated Luxury Brands</h3>
+                    <p>We partner with the world's most prestigious beauty houses to bring you exclusive collections</p>
+
+                    <div class="brand-logos">
+                        <div class="brand-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/La_Mer_logo.svg/1200px-La_Mer_logo.svg.png"
+                                alt="La Mer">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/La_Prairie_logo.svg/2560px-La_Prairie_logo.svg.png"
+                                alt="La Prairie">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="https://logos-world.net/wp-content/uploads/2020/11/Sisley-Logo.png" alt="Sisley">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="https://logos-world.net/wp-content/uploads/2021/02/Chanel-Logo.png" alt="Chanel">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Tom_Ford_2016_logo.svg/2560px-Tom_Ford_2016_logo.svg.png"
+                                alt="Tom Ford">
+                        </div>
+                    </div>
+
+                    <p>Discover limited-edition collections and exclusive products available only through Mountain
+                        Fashion Magazine</p>
+                </div>
+
+                <!-- Wellness Section -->
+                <div class="wellness-section fade-in delay-1">
+                    <div class="wellness-content">
+                        <h3>Holistic Wellness Experiences</h3>
+                        <p>True luxury extends beyond products to transformative experiences. Our wellness retreats
+                            combine ancient Malawian healing traditions with modern spa techniques for complete
+                            rejuvenation.</p>
+
+                        <div class="luxury-benefits">
+                            <h4>Signature Treatments:</h4>
+                            <ul>
+                                <li><strong>Mulanje Stone Therapy:</strong> Heated volcanic stones from Mount Mulanje
+                                    combined with indigenous herbal infusions</li>
+                                <li><strong>Lake Malawi Seaweed Wrap:</strong> Detoxifying treatment using nutrient-rich
+                                    lake seaweed</li>
+                                <li><strong>Baobab Rejuvenation Facial:</strong> Anti-aging treatment featuring rare
+                                    baobab extract</li>
+                                <li><strong>Nyika Plateau Aromatherapy:</strong> Custom blends using high-altitude
+                                    botanicals</li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">Book Wellness Retreat</a>
+                    </div>
+
+                    <div class="wellness-image floating" style="animation-delay: 0.2s">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2670&auto=format&fit=crop"
+                            alt="Luxury Spa">
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <h3 class="section-title fade-in">Voices of Luxury</h3>
+                <p class="section-subtitle fade-in">What our discerning clients say about their beauty journey with us
+                </p>
+
+                <div class="testimonial-grid">
+                    <div class="testimonial fade-in delay-1">
+                        <p>"The Mulanje Cedar Elixir transformed my skincare routine. The scent alone transports me to
+                            the misty mountains of Malawi every morning. After three months, my skin has never looked
+                            more radiant."</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2664&auto=format&fit=crop"
+                                    alt="Client">
+                            </div>
+                            <div>
+                                <h4>Amara Banda</h4>
+                                <p>Lilongwe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial fade-in delay-2">
+                        <p>"As a frequent traveler, I've tried luxury brands worldwide. The attention to detail in
+                            Mountain Fashion's beauty curation rivals Parisian boutiques. The Nyika Twilight fragrance
+                            has become my signature scent."</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2787&auto=format&fit=crop"
+                                    alt="Client">
+                            </div>
+                            <div>
+                                <h4>Chloe Mwale</h4>
+                                <p>London & Blantyre</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial fade-in delay-3">
+                        <p>"The wellness retreat at Cape Maclear was life-changing. The combination of traditional
+                            Malawian healing techniques with luxury spa amenities created an experience I'll never
+                            forget. Worth every penny."</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop"
+                                    alt="Client">
+                            </div>
+                            <div>
+                                <h4>David Phiri</h4>
+                                <p>Johannesburg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final CTA -->
+                <div class="beauty-cta fade-in delay-1">
+                    <h3>Begin Your Luxury Beauty Journey</h3>
+                    <p>Join our exclusive beauty community and receive a complimentary consultation with our luxury
+                        beauty advisors</p>
+
+                    <div class="cta-buttons">
+                        <a href="/components/appointments.html" class="btn btn-primary">Book Consultation</a>
+                        <a href="/public/features/editorial.html" class="btn btn-secondary">Explore Collections</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="footer"></div>
+    </main>
+    <script>
+        // Simple animation trigger
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add intersection observer for animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe all elements with fade-in class
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+    <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+</body>
+
+</html>

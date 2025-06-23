@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QWVCP8Y72"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5QWVCP8Y72');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2708873046269509"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Mountain Fashion Magazine | Home</title>
+    <style>
+        /* ==== GLOBAL STYLES ==== */
+        :root {
+            --sky-blue: #B8D8EB;
+            --sunlit-gold: #FFD66B;
+            --earthy-green: #7BA67C;
+            --granite-grey: #4D4D4D;
+            --cream-white: #F9F6F1;
+            --deep-navy: #1a1a2e;
+            --accent-coral: #ff6b6b;
+            --platinum: #e5e4e2;
+            --diamond: #b9f2ff;
+            --text-primary: #333;
+            --text-secondary: #555;
+            --bg-primary: #f9f6f1;
+            --bg-secondary: #ffffff;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--sunlit-gold);
+            color: var(--deep-navy);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 214, 107, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--deep-navy);
+            color: var(--sunlit-gold);
+            border: 2px solid var(--granite-grey);
+        }
+
+        .btn-secondary:hover {
+            background: var(--cream-white);
+            color: var(--deep-navy);
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--sunlit-gold);
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--sunlit-gold);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: -2rem auto 3rem;
+            color: var(--granite-grey);
+            font-weight: 400;
+        }
+
+        /* ==== HERO SECTION ==== */
+        .hero {
+            min-height: 90vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+                url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2676&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            color: linear-gradient(to right, var(--cream-white), var(--sunlit-gold));
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+            color: var(--cream-white);
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* ==== INTRO SECTION ==== */
+        .home-intro-row {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            padding: 5rem 0;
+        }
+
+        .home-intro-text {
+            flex: 1;
+        }
+
+        .home-section-title-custom {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: var(--deep-navy);
+            margin-bottom: 1.5rem;
+        }
+
+        .home-section-subtitle-custom {
+            font-size: 1.1rem;
+            color: var(--granite-grey);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .home-intro-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .home-intro-image {
+            flex: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+
+        .home-intro-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .home-intro-image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* ==== DESIGNER TEASER SECTION ==== */
+        .designers-teaser {
+            background: linear-gradient(135deg, var(--cream-white) 0%, var(--sky-blue) 100%);
+            padding: 5rem 0;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .designers-teaser h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            color: var(--deep-navy);
+            margin-bottom: 1.5rem;
+        }
+
+        .designers-teaser p {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            color: var(--granite-grey);
+            font-size: 1.1rem;
+        }
+
+        .teaser-highlights {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .teaser-highlight {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .teaser-highlight:hover {
+            transform: translateY(-10px);
+        }
+
+        .teaser-highlight i {
+            font-size: 3rem;
+            color: var(--sunlit-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .teaser-highlight h3 {
+            font-size: 1.4rem;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+        }
+
+        .teaser-highlight p {
+            font-size: 1rem;
+            color: var(--granite-grey);
+            margin-bottom: 0;
+        }
+
+        .designers-teaser .btn {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* ==== HIGHLIGHTS SECTION ==== */
+        .home-highlights-section {
+            padding: 5rem 0;
+        }
+
+        .highlights-grid-new {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .highlight-card-new {
+            background: var(--card-bg);
+            box-shadow: var(--box-shadow);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .highlight-card-new:hover {
+            transform: translateY(-10px);
+            border-color: var(--sunlit-gold);
+        }
+
+        .highlight-icon-new {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 214, 107, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .highlight-icon-new i {
+            font-size: 2.5rem;
+            color: var(--sunlit-gold);
+        }
+
+        .highlight-title-new {
+            font-size: 1.5rem;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+        }
+
+        .highlight-description-new {
+            color: var(--granite-grey);
+            line-height: 1.7;
+        }
+
+        /* ==== LATEST ISSUE SECTION ==== */
+        .home-latest-issue-section {
+            padding: 5rem 0;
+            background-color: var(--cream-white);
+        }
+
+        .latest-issue-content-wrapper {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .latest-issue-cover {
+            flex: 1;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .latest-issue-cover img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .latest-issue-details {
+            flex: 1;
+        }
+
+        .latest-issue-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 1.5rem;
+        }
+
+        .latest-issue-description {
+            color: var(--granite-grey);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .issue-features-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .issue-features-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--granite-grey);
+        }
+
+        .issue-features-list li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--sunlit-gold);
+        }
+
+        .latest-issue-cta {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        /* ==== TEAM SECTION ==== */
+        .home-team-section {
+            padding: 5rem 0;
+            background-color: var(--cream-white);
+        }
+
+        /* ==== QUICK CONTACT SECTION ==== */
+        .home-quick-contact-section {
+            padding: 5rem 0;
+            background-color: var(--deep-navy);
+            color: white;
+        }
+
+        .home-quick-contact-section .home-section-title-custom,
+        .home-quick-contact-section .home-section-subtitle-custom {
+            color: white;
+        }
+
+        .quick-contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--sunlit-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item p,
+        .contact-item p a {
+            color: var(--platinum);
+            font-size: 1.1rem;
+        }
+
+        .contact-item p a:hover {
+            color: var(--sunlit-gold);
+            text-decoration: none;
+        }
+
+        /* ==== RESPONSIVE STYLES ==== */
+        @media (max-width: 992px) {
+            .home-intro-row {
+                flex-direction: column;
+            }
+
+            .latest-issue-content-wrapper {
+                flex-direction: column;
+            }
+
+            .latest-issue-cover {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .latest-issue-cta {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .home-intro-row {
+                padding: 3rem 0;
+            }
+
+            .designers-teaser {
+                padding: 3rem 0;
+            }
+
+            .teaser-highlights {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .latest-issue-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .home-section-title-custom {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+        }
+
+        /* ==== FIXED TEAM SECTION ==== */
+        .home-team-section {
+            padding: 4rem 0;
+            background-color: var(--cream-white);
+        }
+
+        .team-members-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            justify-items: center;
+        }
+
+        .team-member-card {
+            width: 100%;
+            max-width: 340px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 1rem auto;
+            border: 4px solid var(--cream-white);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease;
+        }
+
+        .team-member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .team-member-base-info {
+            transition: opacity 0.3s ease;
+        }
+
+        .team-member-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--deep-navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .team-member-role {
+            font-size: 0.9rem;
+            color: var(--sunlit-gold);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .team-member-details {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            text-align: left;
+            transition: opacity 0.5s ease-in-out, max-height 0.6s ease-in-out;
+            margin-top: 1rem;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+        }
+
+        .team-member-details h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--deep-navy);
+            font-size: 0.95rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .team-member-details p.team-member-description {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--granite-grey);
+            margin-bottom: 0.8rem;
+        }
+
+        .team-member-details ul {
+            list-style: none;
+            padding-left: 0;
+            font-size: 0.85rem;
+            color: var(--granite-grey);
+        }
+
+        .team-member-details ul li {
+            margin-bottom: 0.3rem;
+            position: relative;
+            padding-left: 18px;
+        }
+
+        .team-member-details ul li::before {
+            content: "\f005";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--sunlit-gold);
+            position: absolute;
+            left: 0;
+            top: 1px;
+        }
+
+        /* Hover Effects */
+        .team-members-container:hover .team-member-card:not(:hover) {
+            transform: scale(0.95);
+            opacity: 0.7;
+        }
+
+        .team-member-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .team-member-card:hover .team-member-photo {
+            transform: scale(1.1);
+        }
+
+        .team-member-card:hover .team-member-details {
+            opacity: 1;
+            max-height: 400px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .team-members-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .team-member-card {
+                max-width: 100%;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .home-section-title-custom {
+                font-size: 1.8rem;
+            }
+
+            .team-member-photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .team-member-name {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Mountain Fashion Magazine</h1>
+                <p class="hero-subtitle">Where Global Style Meets Malawian Culture</p>
+                <div class="hero-cta">
+                    <a href="features/editorial.html" class="btn btn-primary">Explore Collection</a>
+                    <a href="features/newsletter.html" class="btn btn-secondary">Go Pro</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="home-intro-row">
+            <div class="container">
+                <div class="home-intro-row">
+                    <div class="home-intro-text">
+                        <h2 class="home-section-title-custom">Welcome to the Peak of Style</h2>
+                        <p class="home-section-subtitle-custom">Mountain Fashion Magazine is your exclusive pass to the
+                            stunning intersection of high fashion and the vibrant cultural landscape of Malawi. We bring
+                            you closer to the designers, the stories, and the breathtaking scenery that inspire us.</p>
+                        <p>From the bustling markets of Lilongwe to the serene shores of Lake Malawi, discover how
+                            tradition and modernity dance together, creating a unique sartorial narrative. Our pages are
+                            filled with stunning photography, insightful articles, and a celebration of both global
+                            trends and local artistry.</p>
+                        <a href="features/editorial.html" class="btn btn-primary">Discover More</a>
+                    </div>
+                    <div class="home-intro-image">
+                        <img src="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?q=80&w=2574&auto=format&fit=crop"
+                            alt="Malawian Fashion Scene Inspiration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Designer Teaser Section -->
+        <section class="designers-teaser">
+            <div class="container">
+                <h2>Unlock Your Creative Potential</h2>
+                <p>Discover our exclusive Designer's Spotlight - a suite of professional tools and resources crafted
+                    specifically for fashion visionaries.</p>
+
+                <div class="teaser-highlights">
+                    <div class="teaser-highlight">
+                        <i class="fas fa-palette"></i>
+                        <h3>Digital Moodboards</h3>
+                        <p>Create stunning visual concepts with our intuitive moodboard creator.</p>
+                    </div>
+                    <div class="teaser-highlight">
+                        <i class="fas fa-ruler-combined"></i>
+                        <h3>Pattern Library</h3>
+                        <p>Access hundreds of authentic Malawian patterns and global textiles.</p>
+                    </div>
+                    <div class="teaser-highlight">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Trend Forecasts</h3>
+                        <p>Stay ahead with our exclusive seasonal trend reports.</p>
+                    </div>
+                </div>
+
+                <a href="designers.html" class="btn btn-primary">Explore Designer Tools</a>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="home-highlights-section">
+            <div class="container">
+                <h2 class="home-section-title-custom text-center">Magazine Highlights</h2>
+                <div class="highlights-grid-new">
+                    <div class="highlight-card-new">
+                        <div class="highlight-icon-new">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="highlight-title-new">Cultural Threads</h3>
+                        <p class="highlight-description-new">Explore how Malawian heritage, from Chitenje prints to
+                            traditional artisanship, is woven into contemporary fashion narratives.</p>
+                    </div>
+                    <div class="highlight-card-new">
+                        <div class="highlight-icon-new">
+                            <i class="fas fa-mountain-sun"></i>
+                        </div>
+                        <h3 class="highlight-title-new">Scenic Shoots</h3>
+                        <p class="highlight-description-new">Journey with us through Malawi's breathtaking landscapes,
+                            the backdrop for our exclusive fashion editorials.</p>
+                    </div>
+                    <div class="highlight-card-new">
+                        <div class="highlight-icon-new">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <h3 class="highlight-title-new">Designer Spotlights</h3>
+                        <p class="highlight-description-new">Get to know the visionary designers, both emerging and
+                            established, who are shaping the future of style in Malawi and beyond.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Issue Section -->
+        <section class="home-latest-issue-section">
+            <div class="container">
+                <h2 class="home-section-title-custom text-center">Hot Off The Press</h2>
+                <p class="home-section-subtitle-custom text-center">A sneak peek into our current issue, bridging
+                    Malawian elegance with global trends.</p>
+                <div class="latest-issue-content-wrapper">
+                    <div class="latest-issue-cover">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2487&auto=format&fit=crop"
+                            alt="Mountain Fashion Magazine Latest Issue Cover">
+                    </div>
+                    <div class="latest-issue-details">
+                        <h3 class="latest-issue-title">Vol. 3: The "Heritage Bloom" Issue</h3>
+                        <p class="latest-issue-description">This month, we delve deep into how ancestral artistry is
+                            blossoming into contemporary masterpieces. Discover exclusive interviews, stunning
+                            editorials from the Zomba Plateau, and a guide to the season's most inspired looks.</p>
+                        <ul class="issue-features-list">
+                            <li>The New Wave of Chitenje Designers</li>
+                            <li>Conversations with Malawi's Top Models</li>
+                            <li>Fashion on the Shores of Cape Maclear</li>
+                            <li>Trend Report: Earth Tones & Artisanal Accessories</li>
+                        </ul>
+                        <div class="latest-issue-cta">
+                            <a href="features/editorial.html" class="btn btn-primary">View Excerpts</a>
+                            <a href="features/newsletter.html" class="btn btn-primary">Full Access</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <div class="home-team-section">
+            <div class="container">
+                <h2 class="home-section-title-custom text-center">Meet Our Visionaries</h2>
+                <p class="home-section-subtitle-custom text-center">The creative minds shaping Mountain Fashion Magazine
+                    and celebrating Malawian style.</p>
+
+                <div class="team-members-container">
+                    <!-- Team Member 1 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/banken mtsiriza.jpg"
+                                alt="Banken Mtsiriza - Chief Executive Officer">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Banken Mtsiriza</h3>
+                            <p class="team-member-role">Chief Executive Officer</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Banken is the driving force behind Mountain Fashion, with
+                                a keen eye for storytelling that bridges Malawian culture with global fashion
+                                narratives.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>Bachelor of Education in Human Ecology</li>
+                                <li>Experienced in teaching fashion and design.</li>
+                            </ul>
+                            <h4>Achievements:</h4>
+                            <ul>
+                                <li>Founder of Mountain Fashion Magazine</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/lekeleni chinkhota.jpg"
+                                alt="Lekeleni Chinkhota - Chief Editor">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Lekereni Chinkhota</h3>
+                            <p class="team-member-role">Chief Editor</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Lekereni is the chief editor of Mountain Fashion
+                                Magazine.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>Bachelor of Arts In Language and Communication Studies</li>
+                                <li>Experienced in writing and editing.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/blessings mtsiriza.jpg"
+                                alt="Blessings Mtsiriza - Business and Financial Manager">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Blessings Mtsiriza</h3>
+                            <p class="team-member-role">Business and Financial Manager</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Blessing manages the business and financial operations of
+                                Mountain Fashion, ensuring sustainable growth and supporting the magazine's vision with
+                                strong financial leadership.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>Bachelor of Education (Business Studies)</li>
+                                <li>Experienced in business and financial management.</li>
+                            </ul>
+                            <h4>Achievements:</h4>
+                            <ul>
+                                <li>He is a secondary school teacher (business studies, mathematics and computer
+                                    studies)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 4 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/onika mbewe.jpg"
+                                alt="Onika Malinki Mbewe - Creative and Fashion Advisor">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Onika Malinki Mbewe</h3>
+                            <p class="team-member-role">Creative and Fashion Advisor</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">A fashion expert with global experience in teaching
+                                fashion and design in institutions of high learning. She is a fashion designer and a
+                                fashion consultant.</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 5 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/kizio.jpg"
+                                alt="Josophat Makawa - IT Manager">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Josophat Makawa</h3>
+                            <p class="team-member-role">IT Manager</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Josophat manages our IT infrastructure and ensures our
+                                digital platforms run smoothly.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>Fourth Year Student | Bachelor of Science in Mathematics - University of Malawi</li>
+                                <li>Self-taught Web Developer with passion for technology and computer science</li>
+                            </ul>
+                            <h4>Achievements:</h4>
+                            <ul>
+                                <li>Founder of JMC | Math & Academics which deals with tech-based learning of any
+                                    Mathematics course and Softwares (like matlab, maple, mathematica, e.t.c.).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 6 -->
+                     <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/fyabupe nkumbwa.jpg"
+                                alt="Fyabupe Nkumbwa - Model">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Fyabupe Mkumbwa</h3>
+                            <p class="team-member-role">Model</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Fyabupe is a passionate fashion enthusiast and a Creative
+                                Arts student majoring Fashion Design and Drama, she believes fashion is a powerful
+                                medium for self-expression and storytelling.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>First Year Student | Bachelor of Arts in Creative Arts at University of Malawi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 7 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/linda saka.jpg"
+                                alt="Linda Saka - Model">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Linda Saka</h3>
+                            <p class="team-member-role">Model</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Linda is a passionate fashion enthusiast and a Fashion
+                                Design student.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>First Year Student | Bachelor of Arts in Fashion and Design at University of Malawi
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 8 -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img src="/assets/images/limbani longwe.jpg"
+                                alt="Limbani Longwe - Photography and Graphic Design Intern">
+                        </div>
+                        <div class="team-member-base-info">
+                            <h3 class="team-member-name">Limbani Longwe</h3>
+                            <p class="team-member-role">Photography and Graphic Design Intern</p>
+                        </div>
+                        <div class="team-member-details">
+                            <p class="team-member-description">Limbani is a photography and graphic design intern at
+                                Mountain Fashion Magazine.</p>
+                            <h4>Qualifications:</h4>
+                            <ul>
+                                <li>First Year Student | Bachelor of Arts in Fashion and Design at University of Malawi
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a class="btn btn-secondary" href="#contact">About Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Contact Section -->
+        <section class="home-quick-contact-section">
+            <div class="container">
+                <h2 class="home-section-title-custom text-center">Get In Touch</h2>
+                <p class="home-section-subtitle-custom text-center">We'd love to hear from you! For collaborations,
+                    queries, or just to say hello:</p>
+                <div class="quick-contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:mount.fas.magazine@gmail.com">mount.fas.magazine@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+265885157566">+265 885 157 566</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram contact-icon"></i>
+                        <h3>Follow Us</h3>
+                        <p><a href="https://www.instagram.com/mountainmagazine265?igsh=YmNuZnNncnE0cjE0"
+                                target="_blank">@MountainMagazine265</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="footer"></div>
+    </main>
+    <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+</body>
+
+</html>

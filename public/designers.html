@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QWVCP8Y72"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5QWVCP8Y72');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2708873046269509"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Designer's Spotlight | Malawian Heritage Fashion</title>
+    <style>
+        :root {
+            /* Light theme variables */
+            --sky-blue: #B8D8EB;
+            --sunlit-gold: #FFD66B;
+            --earthy-green: #7BA67C;
+            --granite-grey: #4D4D4D;
+            --cream-white: #F9F6F1;
+            --deep-navy: #1a1a2e;
+            --accent-coral: #ff6b6b;
+            --platinum: #e5e4e2;
+            --diamond: #b9f2ff;
+            --text-primary: #333;
+            --text-secondary: #555;
+            --bg-primary: #f9f6f1;
+            --bg-secondary: #ffffff;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--sunlit-gold);
+            color: var(--deep-navy);
+        }
+
+        .btn-primary:hover {
+            background-color: #ffc747;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--deep-navy);
+            border: 2px solid var(--deep-navy);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--deep-navy);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--sunlit-gold);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        #designers {
+            background: linear-gradient(135deg, #f9f6f1 0%, #e8e3db 100%);
+        }
+
+        .designers-hero {
+            background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.9)),
+                url('https://images.unsplash.com/photo-1522338242992-e1a54906a8da?q=80&w=2787&auto=format&fit=crop') center/cover;
+            padding: 8rem 2rem 6rem;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-bottom: 4rem;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .designers-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--sunlit-gold);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .designers-hero p {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+        }
+
+        .tools-section {
+            padding: 4rem 0;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .tool-icon {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--sky-blue) 100%);
+        }
+
+        .tool-icon i {
+            font-size: 4rem;
+            color: var(--sunlit-gold);
+        }
+
+        .tool-content {
+            padding: 2rem;
+        }
+
+        .tool-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+        }
+
+        .tool-content p {
+            color: var(--granite-grey);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .tool-cta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tool-tag {
+            background-color: var(--sunlit-gold);
+            color: var(--deep-navy);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .moodboard-section {
+            background: var(--deep-navy);
+            color: white;
+            padding: 5rem 0;
+            margin: 4rem 0;
+            border-radius: 20px;
+        }
+
+        .moodboard-container {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .moodboard-content {
+            flex: 1;
+        }
+
+        .moodboard-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--sunlit-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .moodboard-content p {
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .moodboard-content ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 2rem;
+        }
+
+        .moodboard-content ul li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .moodboard-content ul li i {
+            color: var(--sunlit-gold);
+            margin-right: 10px;
+        }
+
+        .moodboard-preview {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            min-height: 400px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .moodboard-item {
+            border-radius: 8px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .moodboard-item:hover {
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .fabric-library {
+            padding: 5rem 0;
+        }
+
+        .fabric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .fabric-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .fabric-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .fabric-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .fabric-info {
+            padding: 1.2rem;
+        }
+
+        .fabric-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--deep-navy);
+        }
+
+        .fabric-meta {
+            display: flex;
+            justify-content: space-between;
+            color: var(--granite-grey);
+            font-size: 0.9rem;
+        }
+
+        .trend-reports {
+            background: var(--cream-white);
+            padding: 5rem 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+        }
+
+        .report-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin: 2rem 0;
+            display: flex;
+            transition: all 0.3s ease;
+        }
+
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .report-image {
+            flex: 0 0 40%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .report-content {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .report-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+        }
+
+        .report-content ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 1.5rem 0;
+        }
+
+        .report-content ul li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+        }
+
+        .report-content ul li i {
+            color: var(--sunlit-gold);
+            margin-right: 10px;
+        }
+
+        .designers-cta {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--sky-blue) 100%);
+            color: white;
+            border-radius: 15px;
+            margin: 4rem 0;
+        }
+
+        .designers-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--sunlit-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .designers-cta p {
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .designers-cta .btn {
+            min-width: 200px;
+            margin: 0 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .moodboard-container {
+                flex-direction: column;
+            }
+
+            .report-card {
+                flex-direction: column;
+            }
+
+            .report-image {
+                height: 300px;
+                flex: 0 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .designers-hero {
+                padding: 6rem 1rem 4rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .moodboard-preview {
+                min-height: 350px;
+            }
+
+            .designers-cta .btn {
+                display: block;
+                width: 100%;
+                max-width: 300px;
+                margin: 0.5rem auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .designers-cta h2 {
+                font-size: 2.2rem;
+            }
+
+            .moodboard-preview {
+                grid-template-columns: repeat(2, 1fr);
+                min-height: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <main class="main-content">
+    <section class="page-section" id="designers">
+        <div class="designers-hero">
+            <div class="container">
+                <h1>Designer's Spotlight</h1>
+                <p>Exclusive tools, resources, and inspiration for fashion designers blending Malawian heritage with
+                    global innovation.</p>
+                <a href="#tools" class="btn btn-primary">Explore Tools</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="tools-section" id="tools">
+                <h2 class="section-title">Designer Toolkit</h2>
+                <p class="section-subtitle">Professional resources to elevate your creative process</p>
+
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="tool-content">
+                            <h3>Moodboard Creator</h3>
+                            <p>Visualize your design concepts with our intuitive moodboard tool. Combine colors,
+                                textures, images, and inspiration to create compelling visual narratives.</p>
+                            <div class="tool-cta">
+                                <span class="tool-tag">Free for Pro Members</span>
+                                <a href="#" class="btn btn-secondary">Try Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-ruler-combined"></i>
+                        </div>
+                        <div class="tool-content">
+                            <h3>Pattern Generator</h3>
+                            <p>Create unique textile patterns inspired by Malawian motifs. Customize scales, colors, and
+                                arrangements to develop signature fabrics.</p>
+                            <div class="tool-cta">
+                                <span class="tool-tag">Premium Feature</span>
+                                <a href="#" class="btn btn-secondary">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-vector-square"></i>
+                        </div>
+                        <div class="tool-content">
+                            <h3>Silhouette Studio</h3>
+                            <p>Experiment with garment forms and proportions using our 3D draping simulator. Visualize
+                                how fabrics will flow on different body types.</p>
+                            <div class="tool-cta">
+                                <span class="tool-tag">New</span>
+                                <a href="#" class="btn btn-secondary">Launch Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moodboard-section">
+                <div class="container">
+                    <div class="moodboard-container">
+                        <div class="moodboard-content">
+                            <h2>Create Stunning Moodboards</h2>
+                            <p>Our digital moodboard tool helps you organize inspiration, color palettes, and fabric
+                                swatches in one beautiful, shareable space. Perfect for developing cohesive collections
+                                that tell a story.</p>
+                            <p>Save time and streamline your creative process with features designed specifically for
+                                fashion professionals:</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Drag-and-drop interface</li>
+                                <li><i class="fas fa-check-circle"></i> 10,000+ high-res images</li>
+                                <li><i class="fas fa-check-circle"></i> Collaborative boards</li>
+                                <li><i class="fas fa-check-circle"></i> Export to PDF/Presentation</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Start Creating</a>
+                        </div>
+                        <div class="moodboard-preview">
+                            <div class="moodboard-item"
+                                style="background-image: url('https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=80&w=2670&auto=format&fit=crop');">
+                            </div>
+                            <div class="moodboard-item"
+                                style="background-image: url('https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=2574&auto=format&fit=crop'); grid-column: span 2;">
+                            </div>
+                            <div class="moodboard-item"
+                                style="background-image: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2670&auto=format&fit=crop');">
+                            </div>
+                            <div class="moodboard-item"
+                                style="background-image: url('https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=2670&auto=format&fit=crop');">
+                            </div>
+                            <div class="moodboard-item"
+                                style="background-image: url('https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2670&auto=format&fit=crop'); grid-column: span 2; grid-row: span 2;">
+                            </div>
+                            <div class="moodboard-item"
+                                style="background-image: url('https://images.unsplash.com/photo-1539533018447-63fcce2678e4?q=80&w=2574&auto=format&fit=crop');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fabric-library">
+                <h2 class="section-title">Fabric & Pattern Library</h2>
+                <p class="section-subtitle">Explore our curated collection of textiles from Malawi and beyond</p>
+
+                <div class="fabric-grid">
+                    <div class="fabric-item">
+                        <div class="fabric-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2487&auto=format&fit=crop');">
+                        </div>
+                        <div class="fabric-info">
+                            <h4>Chitenje Heritage</h4>
+                            <div class="fabric-meta">
+                                <span>Malawi</span>
+                                <span>Cotton</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fabric-item">
+                        <div class="fabric-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1566140967404-b8b3932483f5?q=80&w=2670&auto=format&fit=crop');">
+                        </div>
+                        <div class="fabric-info">
+                            <h4>Lake Malawi Linen</h4>
+                            <div class="fabric-meta">
+                                <span>Malawi</span>
+                                <span>Linen Blend</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fabric-item">
+                        <div class="fabric-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=2564&auto=format&fit=crop');">
+                        </div>
+                        <div class="fabric-info">
+                            <h4>Nyika Wool</h4>
+                            <div class="fabric-meta">
+                                <span>Malawi</span>
+                                <span>Merino Wool</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fabric-item">
+                        <div class="fabric-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=2780&auto=format&fit=crop');">
+                        </div>
+                        <div class="fabric-info">
+                            <h4>Mulanje Silk</h4>
+                            <div class="fabric-meta">
+                                <span>Malawi</span>
+                                <span>Silk</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fabric-item">
+                        <div class="fabric-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=80&w=2670&auto=format&fit=crop');">
+                        </div>
+                        <div class="fabric-info">
+                            <h4>Zomba Weave</h4>
+                            <div class="fabric-meta">
+                                <span>Malawi</span>
+                                <span>Handwoven</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fabric-item">
+                        <div class="fabric-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=2536&auto=format&fit=crop');">
+                        </div>
+                        <div class="fabric-info">
+                            <h4>Shire Cotton</h4>
+                            <div class="fabric-meta">
+                                <span>Malawi</span>
+                                <span>Organic Cotton</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="/public/pages/fabrics.html" class="btn btn-primary">Browse Full Library</a>
+                </div>
+            </div>
+
+            <div class="trend-reports">
+                <h2 class="section-title">Seasonal Trend Reports</h2>
+                <p class="section-subtitle">Insights to guide your next collection</p>
+
+                <div class="report-card">
+                    <div class="report-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=2787&auto=format&fit=crop');">
+                    </div>
+                    <div class="report-content">
+                        <h3>Spring/Summer 2025: Heritage Reimagined</h3>
+                        <p>Discover how traditional Malawian motifs are being reinterpreted in contemporary fashion. Our
+                            comprehensive report covers:</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Color palettes inspired by Lake Malawi</li>
+                            <li><i class="fas fa-check"></i> Sustainable fabric innovations</li>
+                            <li><i class="fas fa-check"></i> Silhouette trends for warm weather</li>
+                            <li><i class="fas fa-check"></i> Cultural fusion in accessories</li>
+                            <li><i class="fas fa-check"></i> Market analysis for African designers</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Download Full Report</a>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <div class="report-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2670&auto=format&fit=crop');">
+                    </div>
+                    <div class="report-content">
+                        <h3>Autumn/Winter 2025: Earth & Fire</h3>
+                        <p>Explore the emerging trends that blend Malawian earth tones with vibrant warmth for the
+                            cooler seasons:</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Textured weaves and layered fabrics</li>
+                            <li><i class="fas fa-check"></i> Sustainable insulation techniques</li>
+                            <li><i class="fas fa-check"></i> Modern interpretations of traditional wraps</li>
+                            <li><i class="fas fa-check"></i> Artisanal embellishment techniques</li>
+                            <li><i class="fas fa-check"></i> Global retail opportunities</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Download Full Report</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="designers-cta">
+                <h2>Join Our Designer Community</h2>
+                <p>Connect with fellow designers, access exclusive resources, and showcase your work to a global
+                    audience passionate about Malawian-inspired fashion.</p>
+                <button class="btn btn-primary" id="designerSignUp">Sign Up</button>
+                <button class="btn btn-secondary" id="goProDesigner">Go Pro</button>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+    </main>
+    <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+
+</body>
+
+</html>

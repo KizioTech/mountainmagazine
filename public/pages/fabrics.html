@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QWVCP8Y72"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-5QWVCP8Y72');
+        </script>
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2708873046269509"
+            crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <title>Fabric & Pattern Library | Mountain Fashion Magazine</title>
+        <style>
+            :root {
+                --sky-blue: #B8D8EB;
+                --sunlit-gold: #FFD66B;
+                --earthy-green: #7BA67C;
+                --granite-grey: #4D4D4D;
+                --cream-white: #F9F6F1;
+                --deep-navy: #1a1a2e;
+                --accent-coral: #ff6b6b;
+                --platinum: #e5e4e2;
+                --diamond: #b9f2ff;
+                --text-primary: #333;
+                --text-secondary: #555;
+                --card-bg: #ffffff;
+                --border-color: #e0e0e0;
+                --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Montserrat', sans-serif;
+                background-color: #f9f9f9;
+                color: var(--text-primary);
+                line-height: 1.6;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 2rem;
+            }
+
+            .btn {
+                padding: 0.8rem 1.5rem;
+                border: none;
+                border-radius: 50px;
+                font-weight: 600;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                font-size: 1rem;
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+            }
+
+            .btn-primary {
+                background: var(--sunlit-gold);
+                color: var(--deep-navy);
+            }
+
+            .btn-primary:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 30px rgba(255, 214, 107, 0.4);
+            }
+
+            .btn-secondary {
+                background: var(--deep-navy);
+                color: var(--sunlit-gold);
+            }
+
+            .btn-secondary:hover {
+                background: var(--cream-white);
+                color: var(--deep-navy);
+                transform: translateY(-2px);
+            }
+
+            /* Header Section */
+            .library-header {
+                background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(26, 26, 46, 0.9)),
+                    url('https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2670&auto=format&fit=crop') center/cover;
+                padding: 6rem 2rem;
+                text-align: center;
+                margin-bottom: 4rem;
+                position: relative;
+                overflow: hidden;
+                border-radius: 0 0 20px 20px;
+            }
+
+            .library-header::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><defs><pattern id="pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect x="0" y="0" width="20" height="20" fill="rgba(255,214,107,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23pattern)"/></svg>');
+                opacity: 0.3;
+            }
+
+            .library-header h1 {
+                font-family: 'Playfair Display', serif;
+                font-size: clamp(2.5rem, 6vw, 4.5rem);
+                color: var(--sunlit-gold);
+                margin-bottom: 1.5rem;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+            }
+
+            .library-header p {
+                font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+                max-width: 800px;
+                margin: 0 auto 2.5rem;
+                line-height: 1.7;
+                color: var(--cream-white);
+                position: relative;
+            }
+
+            /* Filter Section */
+            .library-filters {
+                background: var(--card-bg);
+                border-radius: 15px;
+                padding: 2rem;
+                box-shadow: var(--box-shadow);
+                margin-bottom: 3rem;
+            }
+
+            .filter-row {
+                display: flex;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+                margin-bottom: 1.5rem;
+            }
+
+            .filter-group {
+                flex: 1;
+                min-width: 200px;
+            }
+
+            .filter-group label {
+                display: block;
+                margin-bottom: 0.5rem;
+                font-weight: 600;
+                color: var(--text-primary);
+            }
+
+            .filter-group select,
+            .filter-group input {
+                width: 100%;
+                padding: 0.8rem 1rem;
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                background: var(--card-bg);
+                color: var(--text-primary);
+                font-size: 1rem;
+            }
+
+            .filter-group select:focus,
+            .filter-group input:focus {
+                outline: none;
+                border-color: var(--sunlit-gold);
+                box-shadow: 0 0 0 3px rgba(255, 214, 107, 0.3);
+            }
+
+            .color-filters {
+                display: flex;
+                gap: 0.8rem;
+                flex-wrap: wrap;
+                margin-top: 0.5rem;
+            }
+
+            .color-option {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                cursor: pointer;
+                border: 2px solid transparent;
+                transition: all 0.2s ease;
+            }
+
+            .color-option:hover,
+            .color-option.active {
+                transform: scale(1.1);
+                border-color: var(--sunlit-gold);
+            }
+
+            .filter-actions {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .fabrics-search-container {
+                position: relative;
+                display: flex;
+                align-items: center;
+            }
+
+            .fabrics-search-box {
+                position: relative;
+                display: flex;
+                align-items: center;
+                background: linear-gradient(135deg, var(--card-bg) 0%, var(--cream-white) 100%);
+                border: 2px solid var(--border-color);
+                border-radius: 30px;
+                padding: 0;
+                width: 320px;
+                height: 50px;
+                font-size: 14px;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+                overflow: hidden;
+            }
+
+            .fabrics-search-box:hover {
+                border-color: var(--sunlit-gold);
+                box-shadow: 0 8px 25px rgba(255, 214, 107, 0.15);
+                transform: translateY(-2px);
+            }
+
+            .fabrics-search-box:focus-within {
+                border-color: var(--sunlit-gold);
+                box-shadow: 0 0 0 4px rgba(255, 214, 107, 0.2), 0 8px 25px rgba(255, 214, 107, 0.15);
+                transform: translateY(-2px);
+            }
+
+            .fabrics-search-box i {
+                color: var(--text-secondary);
+                margin-left: 18px;
+                margin-right: 12px;
+                font-size: 16px;
+                transition: color 0.3s ease;
+            }
+
+            .fabrics-search-box:focus-within i {
+                color: var(--sunlit-gold);
+            }
+
+            .fabrics-search-box input {
+                flex: 1;
+                border: none;
+                background: transparent;
+                outline: none;
+                color: var(--text-primary);
+                font-size: 14px;
+                font-weight: 500;
+                padding: 0;
+                margin-right: 50px;
+            }
+
+            .fabrics-search-box input::placeholder {
+                color: var(--text-secondary);
+                font-weight: 400;
+            }
+
+            .fabrics-search-btn {
+                position: absolute;
+                right: 4px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: var(--sunlit-gold);
+                border: none;
+                border-radius: 50%;
+                width: 42px;
+                height: 42px;
+                color: var(--deep-navy);
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .fabrics-search-btn:hover {
+                background: var(--deep-navy);
+                color: var(--sunlit-gold);
+                transform: translateY(-50%) scale(1.05);
+                box-shadow: 0 4px 12px rgba(26, 26, 46, 0.3);
+            }
+
+            .fabrics-search-btn:active {
+                transform: translateY(-50%) scale(0.95);
+            }
+
+            /* Fabric Grid */
+            .fabric-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 2rem;
+                margin: 3rem 0;
+            }
+
+            .fabric-item {
+                background: var(--card-bg);
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: var(--box-shadow);
+                transition: all 0.4s ease;
+                position: relative;
+            }
+
+            .fabric-item:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            }
+
+            .fabric-image {
+                height: 250px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .fabric-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+
+            .fabric-item:hover .fabric-image img {
+                transform: scale(1.05);
+            }
+
+            .favorite-btn {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                background: rgba(255, 255, 255, 0.9);
+                border: none;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                color: var(--granite-grey);
+                transition: all 0.3s ease;
+                z-index: 2;
+            }
+
+            .favorite-btn:hover {
+                background: var(--sunlit-gold);
+                color: var(--deep-navy);
+            }
+
+            .favorite-btn.active {
+                color: var(--accent-coral);
+            }
+
+            .fabric-info {
+                padding: 1.5rem;
+            }
+
+            .fabric-title {
+                font-family: 'Playfair Display', serif;
+                font-size: 1.4rem;
+                margin-bottom: 0.5rem;
+                color: var(--deep-navy);
+            }
+
+            .fabric-description {
+                color: var(--text-secondary);
+                font-size: 0.95rem;
+                margin-bottom: 1rem;
+                line-height: 1.5;
+            }
+
+            .fabric-meta {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.85rem;
+                color: var(--text-secondary);
+                margin-bottom: 1.2rem;
+            }
+
+            .fabric-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                margin-top: 1rem;
+            }
+
+            .tag {
+                background: rgba(123, 166, 124, 0.15);
+                color: var(--earthy-green);
+                padding: 0.3rem 0.8rem;
+                border-radius: 30px;
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+
+            .tag.cotton {
+                background: rgba(184, 216, 235, 0.2);
+                color: #4a7b9d;
+            }
+
+            .tag.silk {
+                background: rgba(255, 214, 107, 0.2);
+                color: #c9a53d;
+            }
+
+            .tag.wool {
+                background: rgba(77, 77, 77, 0.15);
+                color: var(--granite-grey);
+            }
+
+            .tag.malawian {
+                background: rgba(255, 107, 107, 0.15);
+                color: var(--accent-coral);
+            }
+
+            .fabric-actions {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1.5rem;
+            }
+
+            .action-btn {
+                flex: 1;
+                text-align: center;
+                padding: 0.8rem;
+                border-radius: 6px;
+                font-size: 0.9rem;
+                font-weight: 500;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+            .action-btn.download {
+                background: var(--deep-navy);
+                color: white;
+                margin-right: 0.5rem;
+            }
+
+            .action-btn.download:hover {
+                background: #0c0c1c;
+            }
+
+            .action-btn.view {
+                background: var(--cream-white);
+                color: var(--deep-navy);
+                border: 1px solid var(--border-color);
+                margin-left: 0.5rem;
+            }
+
+            .action-btn.view:hover {
+                background: var(--sunlit-gold);
+                border-color: var(--sunlit-gold);
+            }
+
+            /* Pagination */
+            .pagination {
+                display: flex;
+                justify-content: center;
+                margin: 3rem 0;
+                gap: 0.5rem;
+            }
+
+            .page-btn {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: var(--card-bg);
+                color: var(--text-primary);
+                border: 1px solid var(--border-color);
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .page-btn:hover,
+            .page-btn.active {
+                background: var(--sunlit-gold);
+                color: var(--deep-navy);
+                border-color: var(--sunlit-gold);
+            }
+
+            /* Responsive Design */
+            @media (max-width: 992px) {
+                .filter-row {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .filter-group {
+                    min-width: 100%;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .fabric-grid {
+                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                }
+
+                .library-header {
+                    padding: 4rem 1.5rem;
+                }
+
+                .fabric-actions {
+                    flex-direction: column;
+                    gap: 0.5rem;
+                }
+
+                .action-btn {
+                    margin: 0;
+                    width: 100%;
+                }
+
+                .action-btn.download {
+                    margin-bottom: 0.5rem;
+                }
+
+                .filter-actions {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .filter-actions>div {
+                    width: 100%;
+                    display: flex;
+                    gap: 1rem;
+                }
+
+                .fabrics-search-box {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .fabric-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .container {
+                    padding: 0 1rem;
+                }
+
+                .pagination {
+                    flex-wrap: wrap;
+                }
+
+                .fabrics-search-box {
+                    width: 100%;
+                    height: 45px;
+                }
+
+                .fabrics-search-btn {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+        </style>
+    </head>
+    <div id="navbar-container"></div>
+    <main class="main-content">
+
+<body>
+    <!-- Hero Header -->
+    <header class="library-header">
+        <div class="container">
+            <h1>Fabric & Pattern Library</h1>
+            <p>Discover our curated collection of premium fabrics and unique patterns from Malawi and around the
+                world. Filter by material, color, origin, and more to find the perfect textile for your next design
+                masterpiece.</p>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Filter Section -->
+        <section class="library-filters">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="">All Categories</option>
+                        <option value="chitenje">Chitenje</option>
+                        <option value="cotton">Cotton</option>
+                        <option value="silk">Silk</option>
+                        <option value="wool">Wool</option>
+                        <option value="linen">Linen</option>
+                        <option value="synthetic">Synthetic</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="origin">Origin</label>
+                    <select id="origin">
+                        <option value="">All Origins</option>
+                        <option value="malawi">Malawi</option>
+                        <option value="africa">Africa</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                        <option value="americas">Americas</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="pattern">Pattern Type</label>
+                    <select id="pattern">
+                        <option value="">All Patterns</option>
+                        <option value="geometric">Geometric</option>
+                        <option value="floral">Floral</option>
+                        <option value="abstract">Abstract</option>
+                        <option value="tribal">Tribal</option>
+                        <option value="stripes">Stripes</option>
+                        <option value="plain">Plain</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label>Colors</label>
+                    <div class="color-filters">
+                        <div class="color-option active" style="background-color: #ff6b6b;" title="Red"></div>
+                        <div class="color-option" style="background-color: #4a7b9d;" title="Blue"></div>
+                        <div class="color-option" style="background-color: #7ba67c;" title="Green"></div>
+                        <div class="color-option" style="background-color: #ffd66b;" title="Yellow"></div>
+                        <div class="color-option" style="background-color: #b8d8eb;" title="Light Blue"></div>
+                        <div class="color-option" style="background-color: #a67c94;" title="Purple"></div>
+                        <div class="color-option" style="background-color: #000000;" title="Black"></div>
+                        <div class="color-option" style="background-color: #ffffff; border: 1px solid #ccc;"
+                            title="White"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-actions">
+                <div class=" fabrics-search-box">
+                    <input type="text" id="searchInput" placeholder="Search fabrics by name or keyword...">
+                    <button id="searchBtn" class="fabrics-search-btn"><i class="fas fa-search"></i></button>
+
+                </div>
+                <div>
+                    <button class="btn btn-primary">Apply Filters</button>
+                    <button class="btn btn-secondary">Reset Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fabric Grid -->
+        <section class="fabric-grid">
+            <!-- Fabric Item 1 -->
+            <div class="fabric-item">
+                <div class="fabric-image">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2487&auto=format&fit=crop"
+                        alt="Chitenje Heritage">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="fabric-info">
+                    <h3 class="fabric-title">Chitenje Heritage</h3>
+                    <p class="fabric-description">Traditional Malawian print with vibrant geometric patterns</p>
+                    <div class="fabric-meta">
+                        <span>Malawi</span>
+                        <span>Cotton</span>
+                    </div>
+                    <div class="fabric-tags">
+                        <span class="tag malawian">Malawian</span>
+                        <span class="tag">Geometric</span>
+                    </div>
+                    <div class="fabric-actions">
+                        <button class="action-btn download"><i class="fas fa-download"></i> Download</button>
+                        <button class="action-btn view"><i class="fas fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fabric Item 2 -->
+            <div class="fabric-item">
+                <div class="fabric-image">
+                    <img src="https://images.unsplash.com/photo-1566140967404-b8b3932483f5?q=80&w=2670&auto=format&fit=crop"
+                        alt="Lake Malawi Linen">
+                    <button class="favorite-btn active"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="fabric-info">
+                    <h3 class="fabric-title">Lake Malawi Linen</h3>
+                    <p class="fabric-description">Lightweight linen blend with aquatic-inspired patterns</p>
+                    <div class="fabric-meta">
+                        <span>Malawi</span>
+                        <span>Linen Blend</span>
+                    </div>
+                    <div class="fabric-tags">
+                        <span class="tag malawian">Malawian</span>
+                        <span class="tag">Abstract</span>
+                    </div>
+                    <div class="fabric-actions">
+                        <button class="action-btn download"><i class="fas fa-download"></i> Download</button>
+                        <button class="action-btn view"><i class="fas fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fabric Item 3 -->
+            <div class="fabric-item">
+                <div class="fabric-image">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=2564&auto=format&fit=crop"
+                        alt="Nyika Wool">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="fabric-info">
+                    <h3 class="fabric-title">Nyika Wool</h3>
+                    <p class="fabric-description">Warm merino wool with traditional Malawian motifs</p>
+                    <div class="fabric-meta">
+                        <span>Malawi</span>
+                        <span>Merino Wool</span>
+                    </div>
+                    <div class="fabric-tags">
+                        <span class="tag malawian">Malawian</span>
+                        <span class="tag wool">Wool</span>
+                        <span class="tag">Tribal</span>
+                    </div>
+                    <div class="fabric-actions">
+                        <button class="action-btn download"><i class="fas fa-download"></i> Download</button>
+                        <button class="action-btn view"><i class="fas fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fabric Item 4 -->
+            <div class="fabric-item">
+                <div class="fabric-image">
+                    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=2670&auto=format&fit=crop"
+                        alt="Mulanje Silk">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="fabric-info">
+                    <h3 class="fabric-title">Mulanje Silk</h3>
+                    <p class="fabric-description">Luxurious silk with delicate floral patterns</p>
+                    <div class="fabric-meta">
+                        <span>Malawi</span>
+                        <span>Silk</span>
+                    </div>
+                    <div class="fabric-tags">
+                        <span class="tag malawian">Malawian</span>
+                        <span class="tag silk">Silk</span>
+                        <span class="tag">Floral</span>
+                    </div>
+                    <div class="fabric-actions">
+                        <button class="action-btn download"><i class="fas fa-download"></i> Download</button>
+                        <button class="action-btn view"><i class="fas fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fabric Item 5 -->
+            <div class="fabric-item">
+                <div class="fabric-image">
+                    <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=80&w=2670&auto=format&fit=crop"
+                        alt="Zomba Weave">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="fabric-info">
+                    <h3 class="fabric-title">Zomba Weave</h3>
+                    <p class="fabric-description">Handwoven textile with intricate geometric patterns</p>
+                    <div class="fabric-meta">
+                        <span>Malawi</span>
+                        <span>Handwoven</span>
+                    </div>
+                    <div class="fabric-tags">
+                        <span class="tag malawian">Malawian</span>
+                        <span class="tag">Geometric</span>
+                        <span class="tag">Handmade</span>
+                    </div>
+                    <div class="fabric-actions">
+                        <button class="action-btn download"><i class="fas fa-download"></i> Download</button>
+                        <button class="action-btn view"><i class="fas fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fabric Item 6 -->
+            <div class="fabric-item">
+                <div class="fabric-image">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=2536&auto=format&fit=crop"
+                        alt="Shire Cotton">
+                    <button class="favorite-btn active"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="fabric-info">
+                    <h3 class="fabric-title">Shire Cotton</h3>
+                    <p class="fabric-description">Organic cotton with traditional stripe patterns</p>
+                    <div class="fabric-meta">
+                        <span>Malawi</span>
+                        <span>Organic Cotton</span>
+                    </div>
+                    <div class="fabric-tags">
+                        <span class="tag malawian">Malawian</span>
+                        <span class="tag cotton">Cotton</span>
+                        <span class="tag">Stripes</span>
+                    </div>
+                    <div class="fabric-actions">
+                        <button class="action-btn download"><i class="fas fa-download"></i> Download</button>
+                        <button class="action-btn view"><i class="fas fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fabric Item 7 -->
+            <div class="fabric-item">
+                <div class="fabric-image">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=2574&auto=format&fit=crop"
+                        alt="African Wax Print">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="fabric-info">
+                    <h3 class="fabric-title">African Wax Print</h3>
+                    <p class="fabric-description">Vibrant cotton fabric with bold geometric patterns</p>
+                    <div class="fabric-meta">
+                        <span>West Africa</span>
+                        <span>Cotton</span>
+                    </div>
+                    <div class="fabric-tags">
+                        <span class="tag">African</span>
+                        <span class="tag cotton">Cotton</span>
+                        <span class="tag">Geometric</span>
+                    </div>
+                    <div class="fabric-actions">
+                        <button class="action-btn download"><i class="fas fa-download"></i> Download</button>
+                        <button class="action-btn view"><i class="fas fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fabric Item 8 -->
+            <div class="fabric-item">
+                <div class="fabric-image">
+                    <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2670&auto=format&fit=crop"
+                        alt="Tribal Weave">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="fabric-info">
+                    <h3 class="fabric-title">Tribal Weave</h3>
+                    <p class="fabric-description">Handcrafted textile with symbolic tribal patterns</p>
+                    <div class="fabric-meta">
+                        <span>Central Africa</span>
+                        <span>Cotton Blend</span>
+                    </div>
+                    <div class="fabric-tags">
+                        <span class="tag">African</span>
+                        <span class="tag">Tribal</span>
+                        <span class="tag">Handmade</span>
+                    </div>
+                    <div class="fabric-actions">
+                        <button class="action-btn download"><i class="fas fa-download"></i> Download</button>
+                        <button class="action-btn view"><i class="fas fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <div class="page-btn active">1</div>
+            <div class="page-btn">2</div>
+            <div class="page-btn">3</div>
+            <div class="page-btn">4</div>
+            <div class="page-btn">5</div>
+            <div class="page-btn"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <script>
+        // Favorite button functionality
+        const favoriteButtons = document.querySelectorAll('.favorite-btn');
+        favoriteButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                this.classList.toggle('active');
+                const icon = this.querySelector('i');
+
+                if (this.classList.contains('active')) {
+                    icon.classList.remove('far', 'fa-heart');
+                    icon.classList.add('fas', 'fa-heart');
+                } else {
+                    icon.classList.remove('fas', 'fa-heart');
+                    icon.classList.add('far', 'fa-heart');
+                }
+            });
+        });
+        // Fabric Library Search and Filter System
+        class FabricLibrary {
+            constructor() {
+                this.fabrics = [];
+                this.filteredFabrics = [];
+                this.currentFilters = {
+                    category: '',
+                    origin: '',
+                    pattern: '',
+                    colors: [],
+                    search: ''
+                };
+
+                this.init();
+            }
+
+            init() {
+                this.extractFabricData();
+                this.setupEventListeners();
+                this.filteredFabrics = [...this.fabrics];
+            }
+
+            // Extract fabric data from existing DOM elements
+            extractFabricData() {
+                const fabricItems = document.querySelectorAll('.fabric-item');
+
+                fabricItems.forEach((item, index) => {
+                    const title = item.querySelector('.fabric-title')?.textContent || '';
+                    const description = item.querySelector('.fabric-description')?.textContent || '';
+                    const metaSpans = item.querySelectorAll('.fabric-meta span');
+                    const origin = metaSpans[0]?.textContent || '';
+                    const material = metaSpans[1]?.textContent || '';
+                    const tags = Array.from(item.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase());
+
+                    // Extract colors from image or assume based on content
+                    const colors = this.extractColorsFromFabric(item, title, description);
+
+                    // Determine category from material or tags
+                    const category = this.determineCategoryFromMaterial(material, tags);
+
+                    // Determine pattern from tags or description
+                    const pattern = this.determinePatternFromTags(tags, description);
+
+                    this.fabrics.push({
+                        index,
+                        element: item,
+                        title: title.toLowerCase(),
+                        description: description.toLowerCase(),
+                        origin: origin.toLowerCase(),
+                        material: material.toLowerCase(),
+                        category: category,
+                        pattern: pattern,
+                        tags: tags,
+                        colors: colors,
+                        searchableText: `${title} ${description} ${origin} ${material} ${tags.join(' ')}`.toLowerCase()
+                    });
+                });
+            }
+
+            // Extract potential colors from fabric based on title, description, or assume defaults
+            extractColorsFromFabric(item, title, description) {
+                const colorMap = {
+                    'red': ['red', 'coral', 'crimson', 'cherry'],
+                    'blue': ['blue', 'navy', 'azure', 'lake', 'aquatic'],
+                    'green': ['green', 'emerald', 'forest'],
+                    'yellow': ['yellow', 'gold', 'amber', 'golden'],
+                    'purple': ['purple', 'violet', 'lavender'],
+                    'black': ['black', 'dark', 'charcoal'],
+                    'white': ['white', 'cream', 'ivory']
+                };
+
+                const text = `${title} ${description}`.toLowerCase();
+                const detectedColors = [];
+
+                Object.keys(colorMap).forEach(color => {
+                    if (colorMap[color].some(variant => text.includes(variant))) {
+                        detectedColors.push(color);
+                    }
+                });
+
+                // Default colors if none detected
+                return detectedColors.length > 0 ? detectedColors : ['red', 'blue'];
+            }
+
+            // Determine category from material
+            determineCategoryFromMaterial(material, tags) {
+                const materialLower = material.toLowerCase();
+
+                if (tags.includes('malawian') || materialLower.includes('chitenje')) return 'chitenje';
+                if (materialLower.includes('cotton')) return 'cotton';
+                if (materialLower.includes('silk')) return 'silk';
+                if (materialLower.includes('wool')) return 'wool';
+                if (materialLower.includes('linen')) return 'linen';
+                if (materialLower.includes('synthetic') || materialLower.includes('blend')) return 'synthetic';
+
+                return 'cotton'; // default
+            }
+
+            // Determine pattern from tags or description
+            determinePatternFromTags(tags, description) {
+                const text = `${tags.join(' ')} ${description}`.toLowerCase();
+
+                if (tags.includes('geometric') || text.includes('geometric')) return 'geometric';
+                if (tags.includes('floral') || text.includes('floral')) return 'floral';
+                if (tags.includes('abstract') || text.includes('abstract')) return 'abstract';
+                if (tags.includes('tribal') || text.includes('tribal')) return 'tribal';
+                if (tags.includes('stripes') || text.includes('stripe')) return 'stripes';
+
+                return 'geometric'; // default
+            }
+
+            setupEventListeners() {
+                // Category filter
+                const categorySelect = document.getElementById('category');
+                categorySelect?.addEventListener('change', (e) => {
+                    this.currentFilters.category = e.target.value;
+                    this.applyFilters();
+                });
+
+                // Origin filter
+                const originSelect = document.getElementById('origin');
+                originSelect?.addEventListener('change', (e) => {
+                    this.currentFilters.origin = e.target.value;
+                    this.applyFilters();
+                });
+
+                // Pattern filter
+                const patternSelect = document.getElementById('pattern');
+                patternSelect?.addEventListener('change', (e) => {
+                    this.currentFilters.pattern = e.target.value;
+                    this.applyFilters();
+                });
+
+                // Color filters
+                const colorOptions = document.querySelectorAll('.color-option');
+                colorOptions.forEach(option => {
+                    option.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.toggleColorFilter(option);
+                    });
+                });
+
+                // Search functionality
+                const searchInput = document.getElementById('searchInput');
+                const searchBtn = document.querySelector('.fabrics-search-btn');
+
+                // Real-time search
+                searchInput?.addEventListener('input', (e) => {
+                    this.currentFilters.search = e.target.value.toLowerCase();
+                    this.debounceSearch();
+                });
+
+                // Search button click
+                searchBtn?.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.currentFilters.search = searchInput?.value.toLowerCase() || '';
+                    this.applyFilters();
+                });
+
+                // Enter key search
+                searchInput?.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        this.currentFilters.search = e.target.value.toLowerCase();
+                        this.applyFilters();
+                    }
+                });
+
+                // Filter action buttons
+                const applyBtn = document.querySelector('.btn-primary');
+                const resetBtn = document.querySelector('.btn-secondary');
+
+                applyBtn?.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.applyFilters();
+                });
+
+                resetBtn?.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.resetFilters();
+                });
+            }
+
+            // Debounced search for real-time filtering
+            debounceSearch() {
+                clearTimeout(this.searchTimeout);
+                this.searchTimeout = setTimeout(() => {
+                    this.applyFilters();
+                }, 300);
+            }
+
+            toggleColorFilter(colorOption) {
+                const colorTitle = colorOption.getAttribute('title')?.toLowerCase();
+                if (!colorTitle) return;
+
+                const colorName = this.mapColorTitle(colorTitle);
+
+                if (colorOption.classList.contains('active')) {
+                    colorOption.classList.remove('active');
+                    this.currentFilters.colors = this.currentFilters.colors.filter(c => c !== colorName);
+                } else {
+                    colorOption.classList.add('active');
+                    if (!this.currentFilters.colors.includes(colorName)) {
+                        this.currentFilters.colors.push(colorName);
+                    }
+                }
+
+                this.applyFilters();
+            }
+
+            mapColorTitle(title) {
+                const colorMap = {
+                    'red': 'red',
+                    'blue': 'blue',
+                    'light blue': 'blue',
+                    'green': 'green',
+                    'yellow': 'yellow',
+                    'purple': 'purple',
+                    'black': 'black',
+                    'white': 'white'
+                };
+
+                return colorMap[title] || title;
+            }
+
+            applyFilters() {
+                this.filteredFabrics = this.fabrics.filter(fabric => {
+                    // Category filter
+                    if (this.currentFilters.category && fabric.category !== this.currentFilters.category) {
+                        return false;
+                    }
+
+                    // Origin filter
+                    if (this.currentFilters.origin) {
+                        const originFilter = this.currentFilters.origin;
+                        if (originFilter === 'africa' && !fabric.origin.includes('africa') && !fabric.tags.includes('african') && !fabric.tags.includes('malawian')) {
+                            return false;
+                        } else if (originFilter !== 'africa' && !fabric.origin.includes(originFilter) && !fabric.tags.includes(originFilter)) {
+                            return false;
+                        }
+                    }
+
+                    // Pattern filter
+                    if (this.currentFilters.pattern && fabric.pattern !== this.currentFilters.pattern) {
+                        return false;
+                    }
+
+                    // Color filter
+                    if (this.currentFilters.colors.length > 0) {
+                        const hasMatchingColor = this.currentFilters.colors.some(color =>
+                            fabric.colors.includes(color)
+                        );
+                        if (!hasMatchingColor) {
+                            return false;
+                        }
+                    }
+
+                    // Search filter
+                    if (this.currentFilters.search) {
+                        const searchTerms = this.currentFilters.search.split(' ').filter(term => term.length > 0);
+                        const matchesSearch = searchTerms.every(term =>
+                            fabric.searchableText.includes(term)
+                        );
+                        if (!matchesSearch) {
+                            return false;
+                        }
+                    }
+
+                    return true;
+                });
+
+                this.renderResults();
+                this.updateResultsCount();
+            }
+
+            renderResults() {
+                const fabricGrid = document.querySelector('.fabric-grid');
+                if (!fabricGrid) return;
+
+                // Hide all fabric items
+                this.fabrics.forEach(fabric => {
+                    fabric.element.style.display = 'none';
+                    fabric.element.style.opacity = '0';
+                    fabric.element.style.transform = 'translateY(20px)';
+                });
+
+                // Show filtered items with animation
+                this.filteredFabrics.forEach((fabric, index) => {
+                    setTimeout(() => {
+                        fabric.element.style.display = 'block';
+                        setTimeout(() => {
+                            fabric.element.style.opacity = '1';
+                            fabric.element.style.transform = 'translateY(0)';
+                        }, 50);
+                    }, index * 100);
+                });
+
+                // Show no results message if needed
+                this.showNoResultsMessage();
+            }
+
+            showNoResultsMessage() {
+                let noResultsMsg = document.querySelector('.no-results-message');
+
+                if (this.filteredFabrics.length === 0) {
+                    if (!noResultsMsg) {
+                        noResultsMsg = document.createElement('div');
+                        noResultsMsg.className = 'no-results-message';
+                        noResultsMsg.innerHTML = `
+                    <div style="text-align: center; padding: 3rem; color: var(--text-secondary);">
+                        <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
+                        <h3 style="margin-bottom: 1rem; color: var(--text-primary);">No fabrics found</h3>
+                        <p>Try adjusting your filters or search terms to find more results.</p>
+                        <button class="btn btn-primary" onclick="fabricLibrary.resetFilters()" style="margin-top: 1rem;">
+                            Clear All Filters
+                        </button>
+                    </div>
+                `;
+                        document.querySelector('.fabric-grid').appendChild(noResultsMsg);
+                    }
+                    noResultsMsg.style.display = 'block';
+                } else if (noResultsMsg) {
+                    noResultsMsg.style.display = 'none';
+                }
+            }
+
+            updateResultsCount() {
+                let resultsCount = document.querySelector('.results-count');
+
+                if (!resultsCount) {
+                    resultsCount = document.createElement('div');
+                    resultsCount.className = 'results-count';
+                    resultsCount.style.cssText = `
+                text-align: center;
+                margin: 1rem 0;
+                padding: 1rem;
+                background: var(--card-bg);
+                border-radius: 8px;
+                color: var(--text-secondary);
+                font-weight: 500;
+            `;
+
+                    const fabricGrid = document.querySelector('.fabric-grid');
+                    fabricGrid.parentNode.insertBefore(resultsCount, fabricGrid);
+                }
+
+                const total = this.fabrics.length;
+                const showing = this.filteredFabrics.length;
+
+                if (showing === total) {
+                    resultsCount.textContent = `Showing all ${total} fabrics`;
+                } else {
+                    resultsCount.textContent = `Showing ${showing} of ${total} fabrics`;
+                }
+            }
+
+            resetFilters() {
+                // Reset filter values
+                this.currentFilters = {
+                    category: '',
+                    origin: '',
+                    pattern: '',
+                    colors: [],
+                    search: ''
+                };
+
+                // Reset form elements
+                const categorySelect = document.getElementById('category');
+                const originSelect = document.getElementById('origin');
+                const patternSelect = document.getElementById('pattern');
+                const searchInput = document.getElementById('search');
+
+                if (categorySelect) categorySelect.value = '';
+                if (originSelect) originSelect.value = '';
+                if (patternSelect) patternSelect.value = '';
+                if (searchInput) searchInput.value = '';
+
+                // Reset color filters
+                const colorOptions = document.querySelectorAll('.color-option');
+                colorOptions.forEach(option => {
+                    option.classList.remove('active');
+                });
+
+                // Apply filters (which will show all items)
+                this.applyFilters();
+
+                // Show success message
+                this.showResetMessage();
+            }
+
+            showResetMessage() {
+                const message = document.createElement('div');
+                message.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--earthy-green);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+            font-weight: 500;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        `;
+                message.textContent = 'Filters reset successfully!';
+
+                document.body.appendChild(message);
+
+                setTimeout(() => {
+                    message.style.transform = 'translateX(0)';
+                }, 100);
+
+                setTimeout(() => {
+                    message.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        document.body.removeChild(message);
+                    }, 300);
+                }, 2000);
+            }
+
+            // Public method to get current filter state
+            getCurrentFilters() {
+                return { ...this.currentFilters };
+            }
+
+            // Public method to set filters programmatically
+            setFilters(filters) {
+                this.currentFilters = { ...this.currentFilters, ...filters };
+                this.updateFormElements();
+                this.applyFilters();
+            }
+
+            updateFormElements() {
+                const categorySelect = document.getElementById('category');
+                const originSelect = document.getElementById('origin');
+                const patternSelect = document.getElementById('pattern');
+                const searchInput = document.getElementById('search');
+
+                if (categorySelect) categorySelect.value = this.currentFilters.category;
+                if (originSelect) originSelect.value = this.currentFilters.origin;
+                if (patternSelect) patternSelect.value = this.currentFilters.pattern;
+                if (searchInput) searchInput.value = this.currentFilters.search;
+
+                // Update color filters
+                const colorOptions = document.querySelectorAll('.color-option');
+                colorOptions.forEach(option => {
+                    const colorTitle = option.getAttribute('title')?.toLowerCase();
+                    const colorName = this.mapColorTitle(colorTitle);
+
+                    if (this.currentFilters.colors.includes(colorName)) {
+                        option.classList.add('active');
+                    } else {
+                        option.classList.remove('active');
+                    }
+                });
+            }
+        }
+
+        // Initialize the fabric library system when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add smooth transitions for fabric items
+            const style = document.createElement('style');
+            style.textContent = `
+        .fabric-item {
+            transition: opacity 0.3s ease, transform 0.3s ease !important;
+        }
+        
+        .results-count {
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .no-results-message {
+            animation: slideUp 0.5s ease;
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    `;
+            document.head.appendChild(style);
+
+            // Initialize the fabric library
+            window.fabricLibrary = new FabricLibrary();
+        });
+
+        // Export for use in other scripts if needed
+        if (typeof module !== 'undefined' && module.exports) {
+            module.exports = FabricLibrary;
+        }
+    </script>
+    <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+</body>
+
+</html>
