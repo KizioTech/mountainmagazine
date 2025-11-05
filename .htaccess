@@ -1,0 +1,31 @@
+Options -Indexes
+
+<Files config.php>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files auth.php>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files register.php>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files reset-password.php>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files welcome.php>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files logout.php>
+    Order allow,deny
+    Deny from all
+</Files>
